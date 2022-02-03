@@ -1,0 +1,12 @@
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Shared\bin\Debug\net5.0\SahaBT.Shared.deps.json
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Shared\bin\Debug\net5.0\SahaBT.Shared.dll
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Shared\bin\Debug\net5.0\ref\SahaBT.Shared.dll
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Shared\bin\Debug\net5.0\SahaBT.Shared.pdb
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Shared\obj\Debug\net5.0\SahaBT.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Shared\obj\Debug\net5.0\SahaBT.Shared.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Shared\obj\Debug\net5.0\SahaBT.Shared.AssemblyInfo.cs
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Shared\obj\Debug\net5.0\SahaBT.Shared.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Shared\obj\Debug\net5.0\SahaBT.Shared.dll
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Shared\obj\Debug\net5.0\ref\SahaBT.Shared.dll
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Shared\obj\Debug\net5.0\SahaBT.Shared.pdb
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Shared\obj\Debug\net5.0\SahaBT.Shared.csproj.AssemblyReference.cache

@@ -1,0 +1,193 @@
+2022-02-02 00:01:07.607 +03:00 [Error] [SahaBT.API.Controllers.SahaBTController] [] System.DivideByZeroException: Attempted to divide by zero.
+   at SahaBT.API.Controllers.SahaBTController.LogTest()
+2022-02-02 00:01:09.431 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "ObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2022-02-02 00:01:09.465 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.LogTest (SahaBT.API)" in 86847.4995ms
+2022-02-02 00:01:09.468 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.LogTest (SahaBT.API)"'
+2022-02-02 00:01:09.473 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/SahaBT/LogTest - - - 500 - application/json;+charset=utf-8 87026.3574ms
+2022-02-02 00:51:32.519 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Application started. Press Ctrl+C to shut down.
+2022-02-02 00:51:32.809 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Hosting environment: "Development"
+2022-02-02 00:51:32.811 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Content root path: "C:\Users\HP\source\repos\SahaBT.API\SahaBT.API"
+2022-02-02 00:51:32.885 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/index.html - -
+2022-02-02 00:51:35.642 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - -
+2022-02-02 00:51:35.688 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/index.html - - - 200 - text/html;charset=utf-8 2782.9674ms
+2022-02-02 00:51:35.717 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - - - 200 11944 application/javascript;+charset=utf-8 65.1772ms
+2022-02-02 00:51:36.610 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - -
+2022-02-02 00:51:37.349 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 738.7898ms
+2022-02-02 00:52:10.167 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/SahaBT/Get - -
+2022-02-02 00:52:10.267 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.Get (SahaBT.API)"'
+2022-02-02 00:52:10.370 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Get\", controller = \"SahaBT\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Entities.Model.ResultModel.StudentsResponseModel]] Get()" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-02 00:52:19.609 +03:00 [Information] [Microsoft.EntityFrameworkCore.Infrastructure] [{ Id: 10403, Name: "Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized" }] Entity Framework Core "5.0.13" initialized '"SahaBTContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-02-02 00:52:21.524 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("152"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Age], [s].[Name]
+FROM [Students] AS [s]"
+2022-02-02 00:52:24.952 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("43"ms) [Parameters=["@__x_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LessonCode]
+FROM [StudentLessons] AS [s]
+INNER JOIN [Lessons] AS [l] ON [s].[LessonId] = [l].[Id]
+WHERE [s].[StudentId] = @__x_Id_0"
+2022-02-02 00:52:24.966 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("1"ms) [Parameters=["@__x_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LessonCode]
+FROM [StudentLessons] AS [s]
+INNER JOIN [Lessons] AS [l] ON [s].[LessonId] = [l].[Id]
+WHERE [s].[StudentId] = @__x_Id_0"
+2022-02-02 00:52:24.967 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("1"ms) [Parameters=["@__x_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LessonCode]
+FROM [StudentLessons] AS [s]
+INNER JOIN [Lessons] AS [l] ON [s].[LessonId] = [l].[Id]
+WHERE [s].[StudentId] = @__x_Id_0"
+2022-02-02 00:52:34.610 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "OkObjectResult", writing value of type '"SahaBT.Entities.Model.ResultModel.StudentsResponseModel"'.
+2022-02-02 00:52:34.655 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.Get (SahaBT.API)" in 24273.2187ms
+2022-02-02 00:52:34.657 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.Get (SahaBT.API)"'
+2022-02-02 00:52:34.667 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/SahaBT/Get - - - 200 - application/json;+charset=utf-8 24501.3075ms
+2022-02-02 00:52:59.540 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/SahaBT/Get - -
+2022-02-02 00:52:59.593 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.Get (SahaBT.API)"'
+2022-02-02 00:52:59.594 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Get\", controller = \"SahaBT\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Entities.Model.ResultModel.StudentsResponseModel]] Get()" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-02 00:53:06.846 +03:00 [Information] [Microsoft.EntityFrameworkCore.Infrastructure] [{ Id: 10403, Name: "Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized" }] Entity Framework Core "5.0.13" initialized '"SahaBTContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-02-02 00:53:06.855 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Age], [s].[Name]
+FROM [Students] AS [s]"
+2022-02-02 00:53:07.904 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("4"ms) [Parameters=["@__x_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LessonCode]
+FROM [StudentLessons] AS [s]
+INNER JOIN [Lessons] AS [l] ON [s].[LessonId] = [l].[Id]
+WHERE [s].[StudentId] = @__x_Id_0"
+2022-02-02 00:53:07.906 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("1"ms) [Parameters=["@__x_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LessonCode]
+FROM [StudentLessons] AS [s]
+INNER JOIN [Lessons] AS [l] ON [s].[LessonId] = [l].[Id]
+WHERE [s].[StudentId] = @__x_Id_0"
+2022-02-02 00:53:07.908 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("1"ms) [Parameters=["@__x_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LessonCode]
+FROM [StudentLessons] AS [s]
+INNER JOIN [Lessons] AS [l] ON [s].[LessonId] = [l].[Id]
+WHERE [s].[StudentId] = @__x_Id_0"
+2022-02-02 00:53:14.557 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "OkObjectResult", writing value of type '"SahaBT.Entities.Model.ResultModel.StudentsResponseModel"'.
+2022-02-02 00:53:14.559 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.Get (SahaBT.API)" in 14965.6029ms
+2022-02-02 00:53:14.560 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.Get (SahaBT.API)"'
+2022-02-02 00:53:14.561 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/SahaBT/Get - - - 200 - application/json;+charset=utf-8 15021.0828ms
+2022-02-02 13:59:35.348 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Application started. Press Ctrl+C to shut down.
+2022-02-02 13:59:35.435 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Hosting environment: "Development"
+2022-02-02 13:59:35.441 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Content root path: "C:\Users\HP\source\repos\SahaBT.API\SahaBT.API"
+2022-02-02 13:59:35.488 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/index.html - -
+2022-02-02 13:59:37.436 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - -
+2022-02-02 13:59:37.439 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/index.html - - - 200 - text/html;charset=utf-8 1968.6482ms
+2022-02-02 13:59:37.548 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - - - 200 11944 application/javascript;+charset=utf-8 105.7285ms
+2022-02-02 13:59:38.272 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - -
+2022-02-02 13:59:38.494 +03:00 [Error] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] [{ Id: 1, Name: "UnhandledException" }] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - SahaBT.API.Controllers.RedisController.Index (SahaBT.API). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-02-02 13:59:39.152 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - - - 500 - text/plain 880.5483ms
+2022-02-02 14:00:11.616 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Application started. Press Ctrl+C to shut down.
+2022-02-02 14:00:11.660 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Hosting environment: "Development"
+2022-02-02 14:00:11.662 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Content root path: "C:\Users\HP\source\repos\SahaBT.API\SahaBT.API"
+2022-02-02 14:00:11.681 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/index.html - -
+2022-02-02 14:00:12.449 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - -
+2022-02-02 14:00:12.473 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/index.html - - - 200 - text/html;charset=utf-8 786.4673ms
+2022-02-02 14:00:12.662 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - - - 200 11944 application/javascript;+charset=utf-8 208.4179ms
+2022-02-02 14:00:13.061 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - -
+2022-02-02 14:00:13.141 +03:00 [Error] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] [{ Id: 1, Name: "UnhandledException" }] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Redis" for actions - SahaBT.API.Controllers.RedisController.Index (SahaBT.API),SahaBT.API.Controllers.RedisController.Detail (SahaBT.API). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-02-02 14:00:13.391 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - - - 500 - text/plain 331.1267ms
+2022-02-02 14:00:25.457 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/swagger-ui-bundle.js.map - -
+2022-02-02 14:00:25.463 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/swagger-ui-standalone-preset.js.map - -
+2022-02-02 14:00:25.492 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/swagger-ui.css.map - -
+2022-02-02 14:00:25.616 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/swagger-ui-standalone-preset.js.map - - - 404 - - 153.4535ms
+2022-02-02 14:00:25.617 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/swagger-ui-bundle.js.map - - - 404 - - 160.7481ms
+2022-02-02 14:00:25.628 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/swagger-ui.css.map - - - 404 - - 134.7611ms
+2022-02-02 14:01:53.696 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Application started. Press Ctrl+C to shut down.
+2022-02-02 14:01:53.753 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Hosting environment: "Development"
+2022-02-02 14:01:53.754 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Content root path: "C:\Users\HP\source\repos\SahaBT.API\SahaBT.API"
+2022-02-02 14:01:53.785 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/index.html - -
+2022-02-02 14:01:54.437 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - -
+2022-02-02 14:01:54.438 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/index.html - - - 200 - text/html;charset=utf-8 654.2902ms
+2022-02-02 14:01:54.534 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - - - 200 11944 application/javascript;+charset=utf-8 65.8423ms
+2022-02-02 14:01:54.850 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - -
+2022-02-02 14:01:54.920 +03:00 [Error] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] [{ Id: 1, Name: "UnhandledException" }] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Redis" for actions - SahaBT.API.Controllers.RedisController.Index (SahaBT.API),SahaBT.API.Controllers.RedisController.Detail (SahaBT.API). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-02-02 14:01:55.184 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - - - 500 - text/plain 334.1192ms
+2022-02-02 14:02:02.886 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/swagger-ui-bundle.js.map - -
+2022-02-02 14:02:02.887 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/swagger-ui-standalone-preset.js.map - -
+2022-02-02 14:02:02.979 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/swagger-ui.css.map - -
+2022-02-02 14:02:03.062 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/swagger-ui.css.map - - - 404 - - 82.4971ms
+2022-02-02 14:02:03.062 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/swagger-ui-standalone-preset.js.map - - - 404 - - 175.3494ms
+2022-02-02 14:02:03.062 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/swagger-ui-bundle.js.map - - - 404 - - 176.4547ms
+2022-02-02 14:02:06.096 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - -
+2022-02-02 14:02:06.116 +03:00 [Error] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] [{ Id: 1, Name: "UnhandledException" }] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Redis" for actions - SahaBT.API.Controllers.RedisController.Index (SahaBT.API),SahaBT.API.Controllers.RedisController.Detail (SahaBT.API). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-02-02 14:02:06.270 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - - - 500 - text/html;+charset=utf-8 173.2444ms
+2022-02-02 14:02:06.310 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - -
+2022-02-02 14:02:06.318 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - - - 200 11944 application/javascript;+charset=utf-8 7.7478ms
+2022-02-02 14:02:06.680 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/favicon.ico - -
+2022-02-02 14:02:06.687 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/favicon.ico - - - 404 - - 6.5119ms
+2022-02-02 14:02:59.738 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Application started. Press Ctrl+C to shut down.
+2022-02-02 14:02:59.805 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Hosting environment: "Development"
+2022-02-02 14:02:59.808 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Content root path: "C:\Users\HP\source\repos\SahaBT.API\SahaBT.API"
+2022-02-02 14:02:59.835 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/index.html - -
+2022-02-02 14:03:00.674 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/index.html - - - 200 - text/html;charset=utf-8 829.4389ms
+2022-02-02 14:03:00.676 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - -
+2022-02-02 14:03:00.742 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - - - 200 11944 application/javascript;+charset=utf-8 53.5871ms
+2022-02-02 14:03:01.114 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - -
+2022-02-02 14:03:01.189 +03:00 [Error] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] [{ Id: 1, Name: "UnhandledException" }] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Redis" for actions - SahaBT.API.Controllers.RedisController.Get (SahaBT.API),SahaBT.API.Controllers.RedisController.Detail (SahaBT.API). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-02-02 14:03:01.542 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - - - 500 - text/plain 427.1049ms
+2022-02-02 14:04:10.175 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Application started. Press Ctrl+C to shut down.
+2022-02-02 14:04:10.213 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Hosting environment: "Development"
+2022-02-02 14:04:10.214 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Content root path: "C:\Users\HP\source\repos\SahaBT.API\SahaBT.API"
+2022-02-02 14:04:10.228 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/index.html - -
+2022-02-02 14:04:10.825 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - -
+2022-02-02 14:04:10.826 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/index.html - - - 200 - text/html;charset=utf-8 586.8383ms
+2022-02-02 14:04:10.891 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - - - 200 11944 application/javascript;+charset=utf-8 62.0501ms
+2022-02-02 14:04:11.105 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - -
+2022-02-02 14:04:11.531 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 426.1615ms
+2022-02-02 14:04:19.303 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/api/Redis - -
+2022-02-02 14:04:19.392 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.RedisController.Get (SahaBT.API)"'
+2022-02-02 14:04:19.452 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Get\", controller = \"Redis\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "SahaBT.API.Controllers.RedisController" ("SahaBT.API").
+2022-02-02 14:04:47.114 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[SahaBT.Entities.Concrete.Personal, SahaBT.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-02-02 14:04:47.148 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.RedisController.Get (SahaBT.API)" in 27681.956ms
+2022-02-02 14:04:47.148 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.RedisController.Get (SahaBT.API)"'
+2022-02-02 14:04:47.149 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/api/Redis - - - 200 - application/json;+charset=utf-8 27846.7849ms
+2022-02-02 14:04:55.150 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/api/Redis - -
+2022-02-02 14:04:55.154 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.RedisController.Get (SahaBT.API)"'
+2022-02-02 14:04:55.154 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Get\", controller = \"Redis\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "SahaBT.API.Controllers.RedisController" ("SahaBT.API").
+2022-02-02 14:05:08.575 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[SahaBT.Entities.Concrete.Personal, SahaBT.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-02-02 14:05:08.579 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.RedisController.Get (SahaBT.API)" in 13423.8591ms
+2022-02-02 14:05:08.579 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.RedisController.Get (SahaBT.API)"'
+2022-02-02 14:05:08.580 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/api/Redis - - - 200 - application/json;+charset=utf-8 13429.8447ms
+2022-02-02 14:05:26.786 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/api/Redis/1 - -
+2022-02-02 14:05:26.788 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.RedisController.Detail (SahaBT.API)"'
+2022-02-02 14:05:26.815 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Detail\", controller = \"Redis\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Detail(Int32)" on controller "SahaBT.API.Controllers.RedisController" ("SahaBT.API").
+2022-02-02 14:05:36.685 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "OkObjectResult", writing value of type '"SahaBT.Entities.Concrete.Personal"'.
+2022-02-02 14:05:36.688 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.RedisController.Detail (SahaBT.API)" in 9873.0989ms
+2022-02-02 14:05:36.688 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.RedisController.Detail (SahaBT.API)"'
+2022-02-02 14:05:36.691 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/api/Redis/1 - - - 200 - application/json;+charset=utf-8 9905.0790ms
+2022-02-02 14:08:05.136 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/api/Redis - -
+2022-02-02 14:08:05.137 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.RedisController.Get (SahaBT.API)"'
+2022-02-02 14:08:05.137 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Get\", controller = \"Redis\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "SahaBT.API.Controllers.RedisController" ("SahaBT.API").
+2022-02-02 14:08:16.056 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[SahaBT.Entities.Concrete.Personal, SahaBT.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-02-02 14:08:16.065 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.RedisController.Get (SahaBT.API)" in 10928.1165ms
+2022-02-02 14:08:16.065 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.RedisController.Get (SahaBT.API)"'
+2022-02-02 14:08:16.072 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/api/Redis - - - 200 - application/json;+charset=utf-8 10935.9880ms

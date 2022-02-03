@@ -1,0 +1,17 @@
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Service\bin\Debug\net5.0\SahaBT.Service.deps.json
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Service\bin\Debug\net5.0\SahaBT.Service.dll
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Service\bin\Debug\net5.0\ref\SahaBT.Service.dll
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Service\bin\Debug\net5.0\SahaBT.Service.pdb
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Service\bin\Debug\net5.0\SahaBT.Core.dll
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Service\bin\Debug\net5.0\SahaBT.Core.pdb
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Service\obj\Debug\net5.0\SahaBT.Service.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Service\obj\Debug\net5.0\SahaBT.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Service\obj\Debug\net5.0\SahaBT.Service.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Service\obj\Debug\net5.0\SahaBT.Service.AssemblyInfo.cs
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Service\obj\Debug\net5.0\SahaBT.Service.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Service\obj\Debug\net5.0\SahaBT.Service.csproj.CopyComplete
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Service\obj\Debug\net5.0\SahaBT.Service.dll
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Service\obj\Debug\net5.0\ref\SahaBT.Service.dll
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Service\obj\Debug\net5.0\SahaBT.Service.pdb
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Service\bin\Debug\net5.0\SahaBT.Shared.dll
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Service\bin\Debug\net5.0\SahaBT.Shared.pdb

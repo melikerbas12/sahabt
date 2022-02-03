@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "8b9580cb-0c59-4240-b13f-cec59586b222": {
+      "ProjectGuid": "8b9580cb-0c59-4240-b13f-cec59586b222",
+      "DisplayName": "SahaBT.API",
+      "ColorIndex": 0
+    },
+    "6e06e8a6-bd42-41eb-ba4b-21cad453661a": {
+      "ProjectGuid": "6e06e8a6-bd42-41eb-ba4b-21cad453661a",
+      "DisplayName": "SahaBT.Core",
+      "ColorIndex": 1
+    },
+    "4b613acd-cc9e-4fd6-b886-7b0b27cb332f": {
+      "ProjectGuid": "4b613acd-cc9e-4fd6-b886-7b0b27cb332f",
+      "DisplayName": "SahaBT.Shared",
+      "ColorIndex": 2
+    },
+    "6b59eb72-35c3-46f4-9547-d924ac2c8f0a": {
+      "ProjectGuid": "6b59eb72-35c3-46f4-9547-d924ac2c8f0a",
+      "DisplayName": "SahaBT.Service",
+      "ColorIndex": 3
+    },
+    "0117fffa-5a91-4084-a3ff-b13acdcb889e": {
+      "ProjectGuid": "0117fffa-5a91-4084-a3ff-b13acdcb889e",
+      "DisplayName": "SahaBT.Shared",
+      "ColorIndex": 4
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 5
+}

@@ -1,0 +1,12 @@
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Entities\bin\Debug\net5.0\SahaBT.Entities.deps.json
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Entities\bin\Debug\net5.0\SahaBT.Entities.dll
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Entities\bin\Debug\net5.0\ref\SahaBT.Entities.dll
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Entities\bin\Debug\net5.0\SahaBT.Entities.pdb
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Entities\obj\Debug\net5.0\SahaBT.Entities.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Entities\obj\Debug\net5.0\SahaBT.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Entities\obj\Debug\net5.0\SahaBT.Entities.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Entities\obj\Debug\net5.0\SahaBT.Entities.AssemblyInfo.cs
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Entities\obj\Debug\net5.0\SahaBT.Entities.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Entities\obj\Debug\net5.0\SahaBT.Entities.dll
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Entities\obj\Debug\net5.0\ref\SahaBT.Entities.dll
+C:\Users\HP\source\repos\SahaBT.API\SahaBT.Entities\obj\Debug\net5.0\SahaBT.Entities.pdb

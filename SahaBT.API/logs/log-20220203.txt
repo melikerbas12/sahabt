@@ -1,0 +1,834 @@
+2022-02-03 10:56:37.747 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Application started. Press Ctrl+C to shut down.
+2022-02-03 10:56:37.864 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Hosting environment: "Development"
+2022-02-03 10:56:37.868 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Content root path: "C:\Users\HP\source\repos\SahaBT.API\SahaBT.API"
+2022-02-03 10:56:37.904 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/index.html - -
+2022-02-03 10:56:40.287 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/index.html - - - 200 - text/html;charset=utf-8 2394.9934ms
+2022-02-03 10:56:41.963 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - -
+2022-02-03 10:56:41.999 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - - - 200 11944 application/javascript;+charset=utf-8 30.2149ms
+2022-02-03 10:56:49.494 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - -
+2022-02-03 10:56:49.872 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 378.1444ms
+2022-02-03 11:04:39.664 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 POST https://localhost:44314/SahaBT/Update application/json 78
+2022-02-03 11:04:39.772 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.Update (SahaBT.API)"'
+2022-02-03 11:04:39.869 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Update\", controller = \"SahaBT\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Entities.Model.ResponseModel]] Update(SahaBT.Entities.Model.ViewModel.StudentLessonUpdateModel)" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 11:04:49.019 +03:00 [Information] [Microsoft.EntityFrameworkCore.Infrastructure] [{ Id: 10403, Name: "Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized" }] Entity Framework Core "5.0.13" initialized '"SahaBTContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-02-03 11:04:51.138 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("109"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Age], [s].[Name]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__p_0"
+2022-02-03 11:04:54.109 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.Update (SahaBT.API)" in 14229.3713ms
+2022-02-03 11:04:54.110 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.Update (SahaBT.API)"'
+2022-02-03 11:04:54.117 +03:00 [Error] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] [{ Id: 1, Name: "UnhandledException" }] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+StudentLessonUpdateModel -> Student
+SahaBT.Entities.Model.ViewModel.StudentLessonUpdateModel -> SahaBT.Entities.Student
+   at lambda_method40(Closure , StudentLessonUpdateModel , Student , ResolutionContext )
+   at SahaBT.Service.Concrete.StudentService.Update(StudentLessonUpdateModel model) in C:\Users\HP\source\repos\SahaBT.API\SahaBT.Service\Concrete\StudentService.cs:line 58
+   at SahaBT.API.Controllers.SahaBTController.Update(StudentLessonUpdateModel model) in C:\Users\HP\source\repos\SahaBT.API\SahaBT.API\Controllers\SahaBTController.cs:line 37
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-02-03 11:04:54.415 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 POST https://localhost:44314/SahaBT/Update application/json 78 - 500 - text/plain 14750.2887ms
+2022-02-03 11:07:54.320 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Application started. Press Ctrl+C to shut down.
+2022-02-03 11:07:54.414 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Hosting environment: "Development"
+2022-02-03 11:07:54.418 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Content root path: "C:\Users\HP\source\repos\SahaBT.API\SahaBT.API"
+2022-02-03 11:07:54.451 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/index.html - -
+2022-02-03 11:07:55.575 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/index.html - - - 200 - text/html;charset=utf-8 1134.5555ms
+2022-02-03 11:07:55.640 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - -
+2022-02-03 11:07:55.827 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - - - 200 11944 application/javascript;+charset=utf-8 159.7404ms
+2022-02-03 11:07:56.225 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - -
+2022-02-03 11:07:56.610 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 384.4949ms
+2022-02-03 11:08:21.491 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 POST https://localhost:44314/SahaBT/Update application/json 62
+2022-02-03 11:08:21.598 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.Update (SahaBT.API)"'
+2022-02-03 11:08:21.699 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Update\", controller = \"SahaBT\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Entities.Model.ResponseModel]] Update(SahaBT.Entities.Model.ViewModel.StudentLessonUpdateModel)" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 11:08:27.786 +03:00 [Information] [Microsoft.EntityFrameworkCore.Infrastructure] [{ Id: 10403, Name: "Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized" }] Entity Framework Core "5.0.13" initialized '"SahaBTContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-02-03 11:08:29.800 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("153"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Age], [s].[Name]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__p_0"
+2022-02-03 11:08:32.461 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.Update (SahaBT.API)" in 10752.7538ms
+2022-02-03 11:08:32.463 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.Update (SahaBT.API)"'
+2022-02-03 11:08:32.471 +03:00 [Error] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] [{ Id: 1, Name: "UnhandledException" }] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+StudentLessonUpdateModel -> Student
+SahaBT.Entities.Model.ViewModel.StudentLessonUpdateModel -> SahaBT.Entities.Student
+   at lambda_method40(Closure , StudentLessonUpdateModel , Student , ResolutionContext )
+   at SahaBT.Service.Concrete.StudentService.Update(StudentLessonUpdateModel model) in C:\Users\HP\source\repos\SahaBT.API\SahaBT.Service\Concrete\StudentService.cs:line 58
+   at SahaBT.API.Controllers.SahaBTController.Update(StudentLessonUpdateModel model) in C:\Users\HP\source\repos\SahaBT.API\SahaBT.API\Controllers\SahaBTController.cs:line 37
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-02-03 11:08:32.758 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 POST https://localhost:44314/SahaBT/Update application/json 62 - 500 - text/plain 11266.5151ms
+2022-02-03 11:09:23.745 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Application started. Press Ctrl+C to shut down.
+2022-02-03 11:09:23.813 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Hosting environment: "Development"
+2022-02-03 11:09:23.817 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Content root path: "C:\Users\HP\source\repos\SahaBT.API\SahaBT.API"
+2022-02-03 11:09:23.866 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/index.html - -
+2022-02-03 11:09:24.895 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/index.html - - - 200 - text/html;charset=utf-8 1039.3261ms
+2022-02-03 11:09:24.921 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - -
+2022-02-03 11:09:25.047 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - - - 200 11944 application/javascript;+charset=utf-8 117.5631ms
+2022-02-03 11:09:25.255 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - -
+2022-02-03 11:09:25.733 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 477.4918ms
+2022-02-03 11:09:48.246 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 POST https://localhost:44314/SahaBT/Update application/json 62
+2022-02-03 11:09:48.360 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.Update (SahaBT.API)"'
+2022-02-03 11:09:48.464 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Update\", controller = \"SahaBT\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Entities.Model.ResponseModel]] Update(SahaBT.Entities.Model.ViewModel.StudentLessonUpdateModel)" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 11:09:54.057 +03:00 [Information] [Microsoft.EntityFrameworkCore.Infrastructure] [{ Id: 10403, Name: "Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized" }] Entity Framework Core "5.0.13" initialized '"SahaBTContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-02-03 11:09:56.053 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("153"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Age], [s].[Name]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__p_0"
+2022-02-03 11:14:01.684 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.Update (SahaBT.API)" in 253207.9967ms
+2022-02-03 11:14:01.686 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.Update (SahaBT.API)"'
+2022-02-03 11:14:01.695 +03:00 [Error] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] [{ Id: 1, Name: "UnhandledException" }] An unhandled exception has occurred while executing the request.
+System.ArgumentException: The key value at position 0 of the call to 'DbSet<Student>.Find' was of type 'Student', which does not match the property type of 'int'.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues, IReadOnlyList`1& keyProperties)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.FindAsync(Object[] keyValues)
+   at SahaBT.Core.Repositories.Concrete.StudentRepository.Update(Student entity) in C:\Users\HP\source\repos\SahaBT.API\SahaBT.Core\Repositories\Concrete\StudentRepository.cs:line 94
+   at SahaBT.Service.Concrete.StudentService.Update(StudentLessonUpdateModel model) in C:\Users\HP\source\repos\SahaBT.API\SahaBT.Service\Concrete\StudentService.cs:line 59
+   at SahaBT.API.Controllers.SahaBTController.Update(StudentLessonUpdateModel model) in C:\Users\HP\source\repos\SahaBT.API\SahaBT.API\Controllers\SahaBTController.cs:line 37
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-02-03 11:14:01.991 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 POST https://localhost:44314/SahaBT/Update application/json 62 - 500 - text/plain 253745.0185ms
+2022-02-03 11:16:01.824 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 POST https://localhost:44314/SahaBT/Update application/json 62
+2022-02-03 11:16:01.833 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.Update (SahaBT.API)"'
+2022-02-03 11:16:01.839 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Update\", controller = \"SahaBT\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Entities.Model.ResponseModel]] Update(SahaBT.Entities.Model.ViewModel.StudentLessonUpdateModel)" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 11:16:04.365 +03:00 [Information] [Microsoft.EntityFrameworkCore.Infrastructure] [{ Id: 10403, Name: "Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized" }] Entity Framework Core "5.0.13" initialized '"SahaBTContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-02-03 11:16:04.397 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("19"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Age], [s].[Name]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__p_0"
+2022-02-03 11:20:09.284 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Application started. Press Ctrl+C to shut down.
+2022-02-03 11:20:09.362 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Hosting environment: "Development"
+2022-02-03 11:20:09.364 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Content root path: "C:\Users\HP\source\repos\SahaBT.API\SahaBT.API"
+2022-02-03 11:20:09.413 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/index.html - -
+2022-02-03 11:20:10.638 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/index.html - - - 200 - text/html;charset=utf-8 1232.2646ms
+2022-02-03 11:20:10.689 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - -
+2022-02-03 11:20:10.749 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - - - 200 11944 application/javascript;+charset=utf-8 43.9142ms
+2022-02-03 11:20:11.242 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - -
+2022-02-03 11:20:11.858 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 614.5895ms
+2022-02-03 11:20:32.863 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 POST https://localhost:44314/SahaBT/Update application/json 62
+2022-02-03 11:20:32.991 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.Update (SahaBT.API)"'
+2022-02-03 11:20:33.075 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Update\", controller = \"SahaBT\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Entities.Model.ResponseModel]] Update(SahaBT.Entities.Model.ViewModel.StudentLessonUpdateModel)" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 11:20:39.802 +03:00 [Information] [Microsoft.EntityFrameworkCore.Infrastructure] [{ Id: 10403, Name: "Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized" }] Entity Framework Core "5.0.13" initialized '"SahaBTContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-02-03 11:20:41.844 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("211"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Age], [s].[Name]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__p_0"
+2022-02-03 11:20:51.890 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("16"ms) [Parameters=["@p2='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Students] SET [Age] = @p0, [Name] = @p1
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;"
+2022-02-03 11:20:54.374 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "OkObjectResult", writing value of type '"SahaBT.Entities.Model.ResponseModel"'.
+2022-02-03 11:20:54.404 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.Update (SahaBT.API)" in 21317.0795ms
+2022-02-03 11:20:54.407 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.Update (SahaBT.API)"'
+2022-02-03 11:20:54.419 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 POST https://localhost:44314/SahaBT/Update application/json 62 - 200 - application/json;+charset=utf-8 21557.4511ms
+2022-02-03 13:44:59.741 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Application started. Press Ctrl+C to shut down.
+2022-02-03 13:44:59.805 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Hosting environment: "Development"
+2022-02-03 13:44:59.807 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Content root path: "C:\Users\HP\source\repos\SahaBT.API\SahaBT.API"
+2022-02-03 13:44:59.837 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/index.html - -
+2022-02-03 13:45:00.662 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - -
+2022-02-03 13:45:00.702 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/index.html - - - 200 - text/html;charset=utf-8 871.0192ms
+2022-02-03 13:45:00.742 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - - - 200 11944 application/javascript;+charset=utf-8 44.2401ms
+2022-02-03 13:45:01.394 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - -
+2022-02-03 13:45:02.012 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 617.9887ms
+2022-02-03 13:45:41.648 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 POST https://localhost:44314/SahaBT/Update application/json 62
+2022-02-03 13:45:41.827 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.Update (SahaBT.API)"'
+2022-02-03 13:45:41.954 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Update\", controller = \"SahaBT\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Entities.Model.ResponseModel]] Update(SahaBT.Entities.Model.ViewModel.StudentLessonUpdateModel)" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 13:45:48.748 +03:00 [Information] [Microsoft.EntityFrameworkCore.Infrastructure] [{ Id: 10403, Name: "Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized" }] Entity Framework Core "5.0.13" initialized '"SahaBTContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-02-03 13:45:50.976 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("160"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Age], [s].[Name]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__p_0"
+2022-02-03 13:46:07.759 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("38"ms) [Parameters=["@p2='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Students] SET [Age] = @p0, [Name] = @p1
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;"
+2022-02-03 13:46:09.623 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "OkObjectResult", writing value of type '"SahaBT.Entities.Model.ResponseModel"'.
+2022-02-03 13:46:09.649 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.Update (SahaBT.API)" in 27682.5559ms
+2022-02-03 13:46:09.650 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.Update (SahaBT.API)"'
+2022-02-03 13:46:09.658 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 POST https://localhost:44314/SahaBT/Update application/json 62 - 200 - application/json;+charset=utf-8 28010.7591ms
+2022-02-03 13:48:50.850 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 POST https://localhost:44314/SahaBT/Update application/json 62
+2022-02-03 13:48:50.868 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.Update (SahaBT.API)"'
+2022-02-03 13:48:50.869 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Update\", controller = \"SahaBT\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Entities.Model.ResponseModel]] Update(SahaBT.Entities.Model.ViewModel.StudentLessonUpdateModel)" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 13:48:56.483 +03:00 [Information] [Microsoft.EntityFrameworkCore.Infrastructure] [{ Id: 10403, Name: "Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized" }] Entity Framework Core "5.0.13" initialized '"SahaBTContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-02-03 13:48:56.497 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("4"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Age], [s].[Name]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__p_0"
+2022-02-03 13:50:29.924 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Application started. Press Ctrl+C to shut down.
+2022-02-03 13:50:29.993 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Hosting environment: "Development"
+2022-02-03 13:50:29.994 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Content root path: "C:\Users\HP\source\repos\SahaBT.API\SahaBT.API"
+2022-02-03 13:50:30.029 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/index.html - -
+2022-02-03 13:50:31.229 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/index.html - - - 200 - text/html;charset=utf-8 1210.3386ms
+2022-02-03 13:50:31.271 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - -
+2022-02-03 13:50:31.350 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - - - 200 11944 application/javascript;+charset=utf-8 71.2336ms
+2022-02-03 13:50:31.808 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - -
+2022-02-03 13:50:32.334 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 524.9209ms
+2022-02-03 13:51:42.946 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 POST https://localhost:44314/SahaBT/Update application/json 41
+2022-02-03 13:51:43.064 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.Update (SahaBT.API)"'
+2022-02-03 13:51:43.195 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Update\", controller = \"SahaBT\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Entities.Model.ResponseModel]] Update(SahaBT.Entities.Model.ViewModel.StudentLessonUpdateModel)" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 13:51:51.741 +03:00 [Information] [Microsoft.EntityFrameworkCore.Infrastructure] [{ Id: 10403, Name: "Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized" }] Entity Framework Core "5.0.13" initialized '"SahaBTContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-02-03 13:51:56.204 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("288"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Age], [s].[Name]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__p_0"
+2022-02-03 13:52:14.931 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("18"ms) [Parameters=["@p2='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Students] SET [Age] = @p0, [Name] = @p1
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;"
+2022-02-03 13:52:16.592 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "OkObjectResult", writing value of type '"SahaBT.Entities.Model.ResponseModel"'.
+2022-02-03 13:52:16.624 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.Update (SahaBT.API)" in 33416.5216ms
+2022-02-03 13:52:16.626 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.Update (SahaBT.API)"'
+2022-02-03 13:52:16.636 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 POST https://localhost:44314/SahaBT/Update application/json 41 - 200 - application/json;+charset=utf-8 33690.0410ms
+2022-02-03 14:04:19.768 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Application started. Press Ctrl+C to shut down.
+2022-02-03 14:04:19.866 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Hosting environment: "Development"
+2022-02-03 14:04:19.870 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Content root path: "C:\Users\HP\source\repos\SahaBT.API\SahaBT.API"
+2022-02-03 14:04:19.911 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/index.html - -
+2022-02-03 14:04:21.236 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/index.html - - - 200 - text/html;charset=utf-8 1332.9251ms
+2022-02-03 14:04:21.236 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - -
+2022-02-03 14:04:21.431 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - - - 200 11944 application/javascript;+charset=utf-8 126.6779ms
+2022-02-03 14:04:21.938 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - -
+2022-02-03 14:04:22.621 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 682.5649ms
+2022-02-03 14:04:47.606 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 POST https://localhost:44314/SahaBT/Post application/json 70
+2022-02-03 14:04:47.790 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.Post (SahaBT.API)"'
+2022-02-03 14:04:47.981 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Post\", controller = \"SahaBT\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Entities.Model.ResponseModel]] Post(SahaBT.Entities.Model.ViewModel.StudentLessonAddModel)" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 14:04:51.500 +03:00 [Information] [Microsoft.EntityFrameworkCore.Infrastructure] [{ Id: 10403, Name: "Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized" }] Entity Framework Core "5.0.13" initialized '"SahaBTContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-02-03 14:04:53.764 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("221"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Students] ([Age], [Name])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Students]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2022-02-03 14:04:54.997 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("31"ms) [Parameters=["@__studentId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[StudentId], [s].[LessonId]
+FROM [StudentLessons] AS [s]
+WHERE [s].[StudentId] = @__studentId_0"
+2022-02-03 14:04:55.140 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("10"ms) [Parameters=["@p0='?' (Size = 20)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Lessons] ([LessonCode])
+VALUES (@p0);
+SELECT [Id]
+FROM [Lessons]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2022-02-03 14:04:55.184 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("8"ms) [Parameters=["@p1='?' (DbType = Int32), @p2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [StudentLessons] ([LessonId], [StudentId])
+VALUES (@p1, @p2);"
+2022-02-03 14:04:55.242 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "OkObjectResult", writing value of type '"SahaBT.Entities.Model.ResponseModel"'.
+2022-02-03 14:04:55.285 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.Post (SahaBT.API)" in 7286.0648ms
+2022-02-03 14:04:55.290 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.Post (SahaBT.API)"'
+2022-02-03 14:04:55.305 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 POST https://localhost:44314/SahaBT/Post application/json 70 - 200 - application/json;+charset=utf-8 7699.1987ms
+2022-02-03 14:05:35.156 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 POST https://localhost:44314/SahaBT/Update application/json 33
+2022-02-03 14:05:35.219 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.Update (SahaBT.API)"'
+2022-02-03 14:05:35.234 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Update\", controller = \"SahaBT\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Entities.Model.ResponseModel]] Update(SahaBT.Entities.Model.ViewModel.StudentLessonUpdateModel)" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 14:05:35.383 +03:00 [Information] [Microsoft.EntityFrameworkCore.Infrastructure] [{ Id: 10403, Name: "Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized" }] Entity Framework Core "5.0.13" initialized '"SahaBTContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-02-03 14:05:35.522 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("8"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Age], [s].[Name]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__p_0"
+2022-02-03 14:05:41.358 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("6"ms) [Parameters=["@p2='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Students] SET [Age] = @p0, [Name] = @p1
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;"
+2022-02-03 14:05:41.365 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "OkObjectResult", writing value of type '"SahaBT.Entities.Model.ResponseModel"'.
+2022-02-03 14:05:41.366 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.Update (SahaBT.API)" in 6131.9633ms
+2022-02-03 14:05:41.366 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.Update (SahaBT.API)"'
+2022-02-03 14:05:41.368 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 POST https://localhost:44314/SahaBT/Update application/json 33 - 200 - application/json;+charset=utf-8 6211.1428ms
+2022-02-03 14:06:10.054 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 DELETE https://localhost:44314/SahaBT/Delete/16 - -
+2022-02-03 14:06:10.061 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.Delete (SahaBT.API)"'
+2022-02-03 14:06:10.088 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Delete\", controller = \"SahaBT\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Entities.Model.ResponseModel]] Delete(Int32)" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 14:06:10.154 +03:00 [Information] [Microsoft.EntityFrameworkCore.Infrastructure] [{ Id: 10403, Name: "Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized" }] Entity Framework Core "5.0.13" initialized '"SahaBTContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-02-03 14:06:10.191 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("13"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Age], [s].[Name]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__p_0"
+2022-02-03 14:06:10.237 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("4"ms) [Parameters=["@__studentId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[LessonId]
+FROM [StudentLessons] AS [s]
+WHERE [s].[StudentId] = @__studentId_0"
+2022-02-03 14:06:10.275 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("16"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [Students]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;"
+2022-02-03 14:06:10.342 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("12"ms) [Parameters=["@__lessonId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [StudentLessons] AS [s]
+WHERE [s].[LessonId] = @__lessonId_0"
+2022-02-03 14:06:10.365 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("3"ms) [Parameters=["@__lessonId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[Id], [l].[LessonCode]
+FROM [Lessons] AS [l]
+WHERE [l].[Id] = @__lessonId_0"
+2022-02-03 14:06:10.413 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("10"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [Lessons]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;"
+2022-02-03 14:06:10.424 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "OkObjectResult", writing value of type '"SahaBT.Entities.Model.ResponseModel"'.
+2022-02-03 14:06:10.426 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.Delete (SahaBT.API)" in 337.6398ms
+2022-02-03 14:06:10.426 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.Delete (SahaBT.API)"'
+2022-02-03 14:06:10.427 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 DELETE https://localhost:44314/SahaBT/Delete/16 - - - 200 - application/json;+charset=utf-8 374.0275ms
+2022-02-03 14:06:27.043 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/SahaBT/Get - -
+2022-02-03 14:06:27.044 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.Get (SahaBT.API)"'
+2022-02-03 14:06:27.058 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Get\", controller = \"SahaBT\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Entities.Model.ResultModel.StudentsResponseModel]] Get()" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 14:06:33.245 +03:00 [Information] [Microsoft.EntityFrameworkCore.Infrastructure] [{ Id: 10403, Name: "Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized" }] Entity Framework Core "5.0.13" initialized '"SahaBTContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-02-03 14:06:33.277 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Age], [s].[Name]
+FROM [Students] AS [s]"
+2022-02-03 14:06:33.342 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("4"ms) [Parameters=["@__x_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LessonCode]
+FROM [StudentLessons] AS [s]
+INNER JOIN [Lessons] AS [l] ON [s].[LessonId] = [l].[Id]
+WHERE [s].[StudentId] = @__x_Id_0"
+2022-02-03 14:06:33.351 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("5"ms) [Parameters=["@__x_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LessonCode]
+FROM [StudentLessons] AS [s]
+INNER JOIN [Lessons] AS [l] ON [s].[LessonId] = [l].[Id]
+WHERE [s].[StudentId] = @__x_Id_0"
+2022-02-03 14:06:33.352 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("1"ms) [Parameters=["@__x_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LessonCode]
+FROM [StudentLessons] AS [s]
+INNER JOIN [Lessons] AS [l] ON [s].[LessonId] = [l].[Id]
+WHERE [s].[StudentId] = @__x_Id_0"
+2022-02-03 14:06:33.354 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "OkObjectResult", writing value of type '"SahaBT.Entities.Model.ResultModel.StudentsResponseModel"'.
+2022-02-03 14:06:33.366 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.Get (SahaBT.API)" in 6307.2469ms
+2022-02-03 14:06:33.366 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.Get (SahaBT.API)"'
+2022-02-03 14:06:33.367 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/SahaBT/Get - - - 200 - application/json;+charset=utf-8 6324.4727ms
+2022-02-03 14:06:51.243 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/SahaBT/GetByLessonCode/12345 - -
+2022-02-03 14:06:51.244 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.GetByLessonCode (SahaBT.API)"'
+2022-02-03 14:06:51.251 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"GetByLessonCode\", controller = \"SahaBT\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Entities.Model.ResultModel.StudentsByLessonCodeResponseModel] GetByLessonCode(System.String)" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 14:06:55.271 +03:00 [Information] [Microsoft.EntityFrameworkCore.Infrastructure] [{ Id: 10403, Name: "Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized" }] Entity Framework Core "5.0.13" initialized '"SahaBTContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-02-03 14:06:55.300 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("4"ms) [Parameters=["@__lessonCode_0='?' (Size = 20)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[Id], [l].[LessonCode]
+FROM [Lessons] AS [l]
+WHERE [l].[LessonCode] = @__lessonCode_0"
+2022-02-03 14:06:55.328 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("6"ms) [Parameters=["@__lessonId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[StudentId], [s].[LessonId], [s0].[Id], [s0].[Age], [s0].[Name]
+FROM [StudentLessons] AS [s]
+INNER JOIN [Students] AS [s0] ON [s].[StudentId] = [s0].[Id]
+WHERE [s].[LessonId] = @__lessonId_0"
+2022-02-03 14:06:55.350 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("5"ms) [Parameters=["@__x_s_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LessonCode]
+FROM [StudentLessons] AS [s]
+INNER JOIN [Lessons] AS [l] ON [s].[LessonId] = [l].[Id]
+WHERE [s].[StudentId] = @__x_s_Id_0"
+2022-02-03 14:06:55.354 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("2"ms) [Parameters=["@__x_s_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LessonCode]
+FROM [StudentLessons] AS [s]
+INNER JOIN [Lessons] AS [l] ON [s].[LessonId] = [l].[Id]
+WHERE [s].[StudentId] = @__x_s_Id_0"
+2022-02-03 14:06:55.357 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("1"ms) [Parameters=["@__x_s_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LessonCode]
+FROM [StudentLessons] AS [s]
+INNER JOIN [Lessons] AS [l] ON [s].[LessonId] = [l].[Id]
+WHERE [s].[StudentId] = @__x_s_Id_0"
+2022-02-03 14:06:55.358 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "OkObjectResult", writing value of type '"SahaBT.Entities.Model.ResultModel.StudentsByLessonCodeResponseModel"'.
+2022-02-03 14:06:55.366 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.GetByLessonCode (SahaBT.API)" in 4113.7527ms
+2022-02-03 14:06:55.366 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.GetByLessonCode (SahaBT.API)"'
+2022-02-03 14:06:55.369 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/SahaBT/GetByLessonCode/12345 - - - 200 - application/json;+charset=utf-8 4125.6810ms
+2022-02-03 14:07:28.193 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/SahaBT/GetCount - -
+2022-02-03 14:07:28.193 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.GetCount (SahaBT.API)"'
+2022-02-03 14:07:28.201 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"GetCount\", controller = \"SahaBT\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Entities.Model.ResultModel.TotalStudentCountResponseModel] GetCount()" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 14:07:28.210 +03:00 [Information] [Microsoft.EntityFrameworkCore.Infrastructure] [{ Id: 10403, Name: "Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized" }] Entity Framework Core "5.0.13" initialized '"SahaBTContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-02-03 14:07:28.218 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Students] AS [s]"
+2022-02-03 14:07:28.219 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "OkObjectResult", writing value of type '"SahaBT.Entities.Model.ResultModel.TotalStudentCountResponseModel"'.
+2022-02-03 14:07:28.223 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.GetCount (SahaBT.API)" in 21.5702ms
+2022-02-03 14:07:28.223 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.GetCount (SahaBT.API)"'
+2022-02-03 14:07:28.226 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/SahaBT/GetCount - - - 200 - application/json;+charset=utf-8 33.4948ms
+2022-02-03 14:07:37.036 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/SahaBT/LogTest - -
+2022-02-03 14:07:37.036 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.LogTest (SahaBT.API)"'
+2022-02-03 14:07:37.053 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"LogTest\", controller = \"SahaBT\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult LogTest()" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 14:07:37.285 +03:00 [Error] [SahaBT.API.Controllers.SahaBTController] [] System.DivideByZeroException: Attempted to divide by zero.
+   at SahaBT.API.Controllers.SahaBTController.LogTest() in C:\Users\HP\source\repos\SahaBT.API\SahaBT.API\Controllers\SahaBTController.cs:line 79
+2022-02-03 14:07:37.287 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "ObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2022-02-03 14:07:37.301 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.LogTest (SahaBT.API)" in 247.1329ms
+2022-02-03 14:07:37.301 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.LogTest (SahaBT.API)"'
+2022-02-03 14:07:37.304 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/SahaBT/LogTest - - - 500 - application/json;+charset=utf-8 267.6376ms
+2022-02-03 15:19:17.197 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Application started. Press Ctrl+C to shut down.
+2022-02-03 15:19:17.263 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Hosting environment: "Development"
+2022-02-03 15:19:17.265 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Content root path: "C:\Users\HP\source\repos\SahaBT.API\SahaBT.API"
+2022-02-03 15:19:17.283 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/index.html - -
+2022-02-03 15:19:18.397 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/index.html - - - 200 - text/html;charset=utf-8 1117.3270ms
+2022-02-03 15:19:18.436 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - -
+2022-02-03 15:19:18.567 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - - - 200 11944 application/javascript;+charset=utf-8 118.5316ms
+2022-02-03 15:19:19.251 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - -
+2022-02-03 15:19:19.958 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 705.5515ms
+2022-02-03 15:19:39.588 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 POST https://localhost:44314/SahaBT/Get application/json 29
+2022-02-03 15:19:39.676 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.Get (SahaBT.API)"'
+2022-02-03 15:19:39.758 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Get\", controller = \"SahaBT\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Entities.Shared.ResultModel.StudentsResponseModel] Get(SahaBT.Shared.Pagination.PagingParameters)" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 15:19:43.513 +03:00 [Information] [Microsoft.EntityFrameworkCore.Infrastructure] [{ Id: 10403, Name: "Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized" }] Entity Framework Core "5.0.13" initialized '"SahaBTContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-02-03 15:19:46.058 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("67"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Students] AS [s]"
+2022-02-03 15:19:46.300 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("44"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Age], [s].[Name]
+FROM [Students] AS [s]
+ORDER BY [s].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY"
+2022-02-03 15:19:46.546 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("7"ms) [Parameters=["@__x_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LessonCode]
+FROM [StudentLessons] AS [s]
+INNER JOIN [Lessons] AS [l] ON [s].[LessonId] = [l].[Id]
+WHERE [s].[StudentId] = @__x_Id_0"
+2022-02-03 15:19:46.558 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("1"ms) [Parameters=["@__x_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LessonCode]
+FROM [StudentLessons] AS [s]
+INNER JOIN [Lessons] AS [l] ON [s].[LessonId] = [l].[Id]
+WHERE [s].[StudentId] = @__x_Id_0"
+2022-02-03 15:19:46.587 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "OkObjectResult", writing value of type '"SahaBT.Entities.Shared.ResultModel.StudentsResponseModel"'.
+2022-02-03 15:19:46.654 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.Get (SahaBT.API)" in 6879.1708ms
+2022-02-03 15:19:46.655 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.Get (SahaBT.API)"'
+2022-02-03 15:19:46.664 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 POST https://localhost:44314/SahaBT/Get application/json 29 - 200 - application/json;+charset=utf-8 7076.4313ms
+2022-02-03 15:19:59.000 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 POST https://localhost:44314/SahaBT/Get application/json 29
+2022-02-03 15:19:59.008 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.Get (SahaBT.API)"'
+2022-02-03 15:19:59.009 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Get\", controller = \"SahaBT\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Entities.Shared.ResultModel.StudentsResponseModel] Get(SahaBT.Shared.Pagination.PagingParameters)" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 15:19:59.156 +03:00 [Information] [Microsoft.EntityFrameworkCore.Infrastructure] [{ Id: 10403, Name: "Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized" }] Entity Framework Core "5.0.13" initialized '"SahaBTContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-02-03 15:19:59.167 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Students] AS [s]"
+2022-02-03 15:19:59.187 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Age], [s].[Name]
+FROM [Students] AS [s]
+ORDER BY [s].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY"
+2022-02-03 15:19:59.195 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("5"ms) [Parameters=["@__x_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LessonCode]
+FROM [StudentLessons] AS [s]
+INNER JOIN [Lessons] AS [l] ON [s].[LessonId] = [l].[Id]
+WHERE [s].[StudentId] = @__x_Id_0"
+2022-02-03 15:19:59.199 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "OkObjectResult", writing value of type '"SahaBT.Entities.Shared.ResultModel.StudentsResponseModel"'.
+2022-02-03 15:19:59.201 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.Get (SahaBT.API)" in 192.2274ms
+2022-02-03 15:19:59.202 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.Get (SahaBT.API)"'
+2022-02-03 15:19:59.204 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 POST https://localhost:44314/SahaBT/Get application/json 29 - 200 - application/json;+charset=utf-8 203.7402ms
+2022-02-03 15:20:29.072 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 POST https://localhost:44314/SahaBT/Get application/json 29
+2022-02-03 15:20:29.072 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.Get (SahaBT.API)"'
+2022-02-03 15:20:29.073 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Get\", controller = \"SahaBT\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Entities.Shared.ResultModel.StudentsResponseModel] Get(SahaBT.Shared.Pagination.PagingParameters)" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 15:20:29.109 +03:00 [Information] [Microsoft.EntityFrameworkCore.Infrastructure] [{ Id: 10403, Name: "Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized" }] Entity Framework Core "5.0.13" initialized '"SahaBTContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-02-03 15:20:29.113 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Students] AS [s]"
+2022-02-03 15:20:29.116 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Age], [s].[Name]
+FROM [Students] AS [s]
+ORDER BY [s].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY"
+2022-02-03 15:20:29.118 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("1"ms) [Parameters=["@__x_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LessonCode]
+FROM [StudentLessons] AS [s]
+INNER JOIN [Lessons] AS [l] ON [s].[LessonId] = [l].[Id]
+WHERE [s].[StudentId] = @__x_Id_0"
+2022-02-03 15:20:29.118 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "OkObjectResult", writing value of type '"SahaBT.Entities.Shared.ResultModel.StudentsResponseModel"'.
+2022-02-03 15:20:29.120 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.Get (SahaBT.API)" in 46.8801ms
+2022-02-03 15:20:29.123 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.Get (SahaBT.API)"'
+2022-02-03 15:20:29.130 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 POST https://localhost:44314/SahaBT/Get application/json 29 - 200 - application/json;+charset=utf-8 58.7490ms
+2022-02-03 15:20:46.873 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 POST https://localhost:44314/SahaBT/Get application/json 29
+2022-02-03 15:20:46.874 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.Get (SahaBT.API)"'
+2022-02-03 15:20:46.874 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Get\", controller = \"SahaBT\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Entities.Shared.ResultModel.StudentsResponseModel] Get(SahaBT.Shared.Pagination.PagingParameters)" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 15:20:46.877 +03:00 [Information] [Microsoft.EntityFrameworkCore.Infrastructure] [{ Id: 10403, Name: "Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized" }] Entity Framework Core "5.0.13" initialized '"SahaBTContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-02-03 15:20:46.893 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Students] AS [s]"
+2022-02-03 15:20:46.896 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Age], [s].[Name]
+FROM [Students] AS [s]
+ORDER BY [s].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY"
+2022-02-03 15:20:46.896 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "OkObjectResult", writing value of type '"SahaBT.Entities.Shared.ResultModel.StudentsResponseModel"'.
+2022-02-03 15:20:46.899 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.Get (SahaBT.API)" in 24.7751ms
+2022-02-03 15:20:46.899 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.Get (SahaBT.API)"'
+2022-02-03 15:20:46.905 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 POST https://localhost:44314/SahaBT/Get application/json 29 - 200 - application/json;+charset=utf-8 32.1325ms
+2022-02-03 16:08:25.684 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Application started. Press Ctrl+C to shut down.
+2022-02-03 16:08:25.735 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Hosting environment: "Development"
+2022-02-03 16:08:25.737 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Content root path: "C:\Users\HP\source\repos\SahaBT.API\SahaBT.API"
+2022-02-03 16:08:25.760 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/index.html - -
+2022-02-03 16:08:28.811 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/index.html - - - 200 - text/html;charset=utf-8 3059.4636ms
+2022-02-03 16:08:29.006 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - -
+2022-02-03 16:08:29.105 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - - - 200 11944 application/javascript;+charset=utf-8 92.4122ms
+2022-02-03 16:08:29.851 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - -
+2022-02-03 16:08:30.515 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 661.9875ms
+2022-02-03 16:08:40.584 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/api/Redis - -
+2022-02-03 16:08:40.677 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.RedisController.Get (SahaBT.API)"'
+2022-02-03 16:08:40.726 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Get\", controller = \"Redis\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "SahaBT.API.Controllers.RedisController" ("SahaBT.API").
+2022-02-03 16:08:46.492 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[SahaBT.Shared.Concrete.Personal, SahaBT.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-02-03 16:08:46.523 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.RedisController.Get (SahaBT.API)" in 5785.0926ms
+2022-02-03 16:08:46.524 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.RedisController.Get (SahaBT.API)"'
+2022-02-03 16:08:46.525 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/api/Redis - - - 200 - application/json;+charset=utf-8 5941.6273ms
+2022-02-03 16:09:10.560 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 POST https://localhost:44314/SahaBT/Post application/json 69
+2022-02-03 16:09:10.576 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.Post (SahaBT.API)"'
+2022-02-03 16:09:10.628 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Post\", controller = \"SahaBT\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Shared.Model.ResponseModel]] Post(SahaBT.Shared.Model.ViewModel.StudentLessonAddModel)" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 16:09:14.030 +03:00 [Information] [Microsoft.EntityFrameworkCore.Infrastructure] [{ Id: 10403, Name: "Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized" }] Entity Framework Core "5.0.13" initialized '"SahaBTContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-02-03 16:09:15.909 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("150"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Students] ([Age], [Name])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Students]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2022-02-03 16:09:17.267 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("7"ms) [Parameters=["@__studentId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[StudentId], [s].[LessonId]
+FROM [StudentLessons] AS [s]
+WHERE [s].[StudentId] = @__studentId_0"
+2022-02-03 16:09:17.405 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("9"ms) [Parameters=["@p0='?' (Size = 20)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Lessons] ([LessonCode])
+VALUES (@p0);
+SELECT [Id]
+FROM [Lessons]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2022-02-03 16:09:17.431 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("5"ms) [Parameters=["@p1='?' (DbType = Int32), @p2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [StudentLessons] ([LessonId], [StudentId])
+VALUES (@p1, @p2);"
+2022-02-03 16:09:17.446 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "OkObjectResult", writing value of type '"SahaBT.Shared.Model.ResponseModel"'.
+2022-02-03 16:09:17.450 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.Post (SahaBT.API)" in 6821.0491ms
+2022-02-03 16:09:17.451 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.Post (SahaBT.API)"'
+2022-02-03 16:09:17.462 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 POST https://localhost:44314/SahaBT/Post application/json 69 - 200 - application/json;+charset=utf-8 6901.5883ms
+2022-02-03 16:09:45.752 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 POST https://localhost:44314/SahaBT/Update application/json 33
+2022-02-03 16:09:45.755 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.Update (SahaBT.API)"'
+2022-02-03 16:09:45.768 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Update\", controller = \"SahaBT\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Shared.Model.ResponseModel]] Update(SahaBT.Shared.Model.ViewModel.StudentLessonUpdateModel)" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 16:09:45.862 +03:00 [Information] [Microsoft.EntityFrameworkCore.Infrastructure] [{ Id: 10403, Name: "Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized" }] Entity Framework Core "5.0.13" initialized '"SahaBTContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-02-03 16:09:45.959 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Age], [s].[Name]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__p_0"
+2022-02-03 16:09:46.022 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("5"ms) [Parameters=["@p2='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Students] SET [Age] = @p0, [Name] = @p1
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;"
+2022-02-03 16:09:46.027 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "OkObjectResult", writing value of type '"SahaBT.Shared.Model.ResponseModel"'.
+2022-02-03 16:09:46.028 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.Update (SahaBT.API)" in 260.4112ms
+2022-02-03 16:09:46.029 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.Update (SahaBT.API)"'
+2022-02-03 16:09:46.029 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 POST https://localhost:44314/SahaBT/Update application/json 33 - 200 - application/json;+charset=utf-8 277.6813ms
+2022-02-03 16:09:58.597 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 DELETE https://localhost:44314/SahaBT/Delete/17 - -
+2022-02-03 16:09:58.600 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.Delete (SahaBT.API)"'
+2022-02-03 16:09:58.613 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Delete\", controller = \"SahaBT\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Shared.Model.ResponseModel]] Delete(Int32)" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 16:09:58.645 +03:00 [Information] [Microsoft.EntityFrameworkCore.Infrastructure] [{ Id: 10403, Name: "Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized" }] Entity Framework Core "5.0.13" initialized '"SahaBTContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-02-03 16:09:58.654 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Age], [s].[Name]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__p_0"
+2022-02-03 16:09:58.688 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("2"ms) [Parameters=["@__studentId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[LessonId]
+FROM [StudentLessons] AS [s]
+WHERE [s].[StudentId] = @__studentId_0"
+2022-02-03 16:09:58.734 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("18"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [Students]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;"
+2022-02-03 16:09:58.770 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("2"ms) [Parameters=["@__lessonId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [StudentLessons] AS [s]
+WHERE [s].[LessonId] = @__lessonId_0"
+2022-02-03 16:09:58.783 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("2"ms) [Parameters=["@__lessonId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [l].[Id], [l].[LessonCode]
+FROM [Lessons] AS [l]
+WHERE [l].[Id] = @__lessonId_0"
+2022-02-03 16:09:58.805 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("8"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [Lessons]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;"
+2022-02-03 16:09:58.815 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "OkObjectResult", writing value of type '"SahaBT.Shared.Model.ResponseModel"'.
+2022-02-03 16:09:58.815 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.Delete (SahaBT.API)" in 202.2625ms
+2022-02-03 16:09:58.816 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.Delete (SahaBT.API)"'
+2022-02-03 16:09:58.816 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 DELETE https://localhost:44314/SahaBT/Delete/17 - - - 200 - application/json;+charset=utf-8 219.2331ms
+2022-02-03 16:10:20.472 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 POST https://localhost:44314/SahaBT/Get application/json 29
+2022-02-03 16:10:20.473 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.Get (SahaBT.API)"'
+2022-02-03 16:10:20.475 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Get\", controller = \"SahaBT\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Entities.Shared.ResultModel.StudentsResponseModel] Get(SahaBT.Shared.Pagination.PagingParameters)" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 16:10:20.496 +03:00 [Information] [Microsoft.EntityFrameworkCore.Infrastructure] [{ Id: 10403, Name: "Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized" }] Entity Framework Core "5.0.13" initialized '"SahaBTContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-02-03 16:10:20.512 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Students] AS [s]"
+2022-02-03 16:10:20.527 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Age], [s].[Name]
+FROM [Students] AS [s]
+ORDER BY [s].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY"
+2022-02-03 16:10:20.603 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("6"ms) [Parameters=["@__x_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LessonCode]
+FROM [StudentLessons] AS [s]
+INNER JOIN [Lessons] AS [l] ON [s].[LessonId] = [l].[Id]
+WHERE [s].[StudentId] = @__x_Id_0"
+2022-02-03 16:10:20.607 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("1"ms) [Parameters=["@__x_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LessonCode]
+FROM [StudentLessons] AS [s]
+INNER JOIN [Lessons] AS [l] ON [s].[LessonId] = [l].[Id]
+WHERE [s].[StudentId] = @__x_Id_0"
+2022-02-03 16:10:20.609 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("1"ms) [Parameters=["@__x_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LessonCode]
+FROM [StudentLessons] AS [s]
+INNER JOIN [Lessons] AS [l] ON [s].[LessonId] = [l].[Id]
+WHERE [s].[StudentId] = @__x_Id_0"
+2022-02-03 16:10:20.610 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "OkObjectResult", writing value of type '"SahaBT.Entities.Shared.ResultModel.StudentsResponseModel"'.
+2022-02-03 16:10:20.616 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.Get (SahaBT.API)" in 140.8799ms
+2022-02-03 16:10:20.616 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.Get (SahaBT.API)"'
+2022-02-03 16:10:20.619 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 POST https://localhost:44314/SahaBT/Get application/json 29 - 200 - application/json;+charset=utf-8 147.1169ms
+2022-02-03 16:10:27.197 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 POST https://localhost:44314/SahaBT/Get application/json 29
+2022-02-03 16:10:27.197 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.Get (SahaBT.API)"'
+2022-02-03 16:10:27.201 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Get\", controller = \"SahaBT\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Entities.Shared.ResultModel.StudentsResponseModel] Get(SahaBT.Shared.Pagination.PagingParameters)" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 16:10:27.203 +03:00 [Information] [Microsoft.EntityFrameworkCore.Infrastructure] [{ Id: 10403, Name: "Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized" }] Entity Framework Core "5.0.13" initialized '"SahaBTContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-02-03 16:10:27.204 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Students] AS [s]"
+2022-02-03 16:10:27.206 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Age], [s].[Name]
+FROM [Students] AS [s]
+ORDER BY [s].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY"
+2022-02-03 16:10:27.213 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("1"ms) [Parameters=["@__x_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LessonCode]
+FROM [StudentLessons] AS [s]
+INNER JOIN [Lessons] AS [l] ON [s].[LessonId] = [l].[Id]
+WHERE [s].[StudentId] = @__x_Id_0"
+2022-02-03 16:10:27.215 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("1"ms) [Parameters=["@__x_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [l].[LessonCode]
+FROM [StudentLessons] AS [s]
+INNER JOIN [Lessons] AS [l] ON [s].[LessonId] = [l].[Id]
+WHERE [s].[StudentId] = @__x_Id_0"
+2022-02-03 16:10:27.216 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "OkObjectResult", writing value of type '"SahaBT.Entities.Shared.ResultModel.StudentsResponseModel"'.
+2022-02-03 16:10:27.217 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.Get (SahaBT.API)" in 15.7265ms
+2022-02-03 16:10:27.218 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.Get (SahaBT.API)"'
+2022-02-03 16:10:27.220 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 POST https://localhost:44314/SahaBT/Get application/json 29 - 200 - application/json;+charset=utf-8 22.9952ms
+2022-02-03 16:10:47.285 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/SahaBT/GetCount - -
+2022-02-03 16:10:47.286 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.GetCount (SahaBT.API)"'
+2022-02-03 16:10:47.288 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"GetCount\", controller = \"SahaBT\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Shared.Model.ResultModel.TotalStudentCountResponseModel] GetCount()" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 16:10:47.290 +03:00 [Information] [Microsoft.EntityFrameworkCore.Infrastructure] [{ Id: 10403, Name: "Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized" }] Entity Framework Core "5.0.13" initialized '"SahaBTContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-02-03 16:10:47.302 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Students] AS [s]"
+2022-02-03 16:10:47.306 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "OkObjectResult", writing value of type '"SahaBT.Shared.Model.ResultModel.TotalStudentCountResponseModel"'.
+2022-02-03 16:10:47.309 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.GetCount (SahaBT.API)" in 21.1824ms
+2022-02-03 16:10:47.309 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.GetCount (SahaBT.API)"'
+2022-02-03 16:10:47.311 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/SahaBT/GetCount - - - 200 - application/json;+charset=utf-8 25.3262ms
+2022-02-03 16:27:29.403 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Application started. Press Ctrl+C to shut down.
+2022-02-03 16:27:29.551 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Hosting environment: "Development"
+2022-02-03 16:27:29.553 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Content root path: "C:\Users\HP\source\repos\SahaBT.API\SahaBT.API"
+2022-02-03 16:27:29.558 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/index.html - -
+2022-02-03 16:27:31.447 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/index.html - - - 200 - text/html;charset=utf-8 1907.2015ms
+2022-02-03 16:27:31.672 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - -
+2022-02-03 16:27:31.777 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - - - 200 11944 application/javascript;+charset=utf-8 98.0440ms
+2022-02-03 16:27:37.498 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - -
+2022-02-03 16:27:37.995 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 497.9295ms
+2022-02-03 16:28:05.713 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 POST https://localhost:44314/SahaBT/Post application/json 27
+2022-02-03 16:28:05.905 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.Post (SahaBT.API)"'
+2022-02-03 16:28:06.086 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Post\", controller = \"SahaBT\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Shared.Model.ResponseModel]] Post(SahaBT.Shared.Model.ViewModel.StudentLessonAddModel)" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 16:28:07.041 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+2022-02-03 16:28:07.099 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.Post (SahaBT.API)" in 993.8667ms
+2022-02-03 16:28:07.099 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.Post (SahaBT.API)"'
+2022-02-03 16:28:07.145 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 POST https://localhost:44314/SahaBT/Post application/json 27 - 400 - application/problem+json;+charset=utf-8 1431.8132ms
+2022-02-03 16:53:35.281 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Application started. Press Ctrl+C to shut down.
+2022-02-03 16:53:35.352 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Hosting environment: "Development"
+2022-02-03 16:53:35.354 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Content root path: "C:\Users\HP\source\repos\SahaBT.API\SahaBT.API"
+2022-02-03 16:53:35.403 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/index.html - -
+2022-02-03 16:53:37.112 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/index.html - - - 200 - text/html;charset=utf-8 1694.1846ms
+2022-02-03 16:53:37.114 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - -
+2022-02-03 16:53:37.320 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - - - 200 11944 application/javascript;+charset=utf-8 140.5000ms
+2022-02-03 16:53:39.114 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - -
+2022-02-03 16:53:40.110 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 996.9479ms
+2022-02-03 16:53:56.371 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 POST https://localhost:44314/SahaBT/Post application/json 24
+2022-02-03 16:53:56.843 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.Post (SahaBT.API)"'
+2022-02-03 16:53:57.433 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Post\", controller = \"SahaBT\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Shared.Model.ResponseModel]] Post(SahaBT.Shared.Model.ViewModel.StudentLessonAddModel)" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 16:54:07.508 +03:00 [Information] [Microsoft.EntityFrameworkCore.Infrastructure] [{ Id: 10403, Name: "Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized" }] Entity Framework Core "5.0.13" initialized '"SahaBTContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-02-03 16:54:13.673 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("374"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Students] ([Age], [Name])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Students]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2022-02-03 16:54:15.341 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("19"ms) [Parameters=["@__studentId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[StudentId], [s].[LessonId]
+FROM [StudentLessons] AS [s]
+WHERE [s].[StudentId] = @__studentId_0"
+2022-02-03 16:54:15.464 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("7"ms) [Parameters=["@p0='?' (Size = 20)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Lessons] ([LessonCode])
+VALUES (@p0);
+SELECT [Id]
+FROM [Lessons]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2022-02-03 16:54:15.492 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("7"ms) [Parameters=["@p1='?' (DbType = Int32), @p2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [StudentLessons] ([LessonId], [StudentId])
+VALUES (@p1, @p2);"
+2022-02-03 16:54:15.550 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "OkObjectResult", writing value of type '"SahaBT.Shared.Model.ResponseModel"'.
+2022-02-03 16:54:15.611 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.Post (SahaBT.API)" in 18148.9387ms
+2022-02-03 16:54:15.615 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.Post (SahaBT.API)"'
+2022-02-03 16:54:15.665 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 POST https://localhost:44314/SahaBT/Post application/json 24 - 200 - application/json;+charset=utf-8 19291.8829ms
+2022-02-03 16:54:37.584 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 POST https://localhost:44314/SahaBT/Post application/json 24
+2022-02-03 16:54:37.596 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.Post (SahaBT.API)"'
+2022-02-03 16:54:37.597 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Post\", controller = \"SahaBT\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Shared.Model.ResponseModel]] Post(SahaBT.Shared.Model.ViewModel.StudentLessonAddModel)" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 16:54:54.031 +03:00 [Information] [Microsoft.EntityFrameworkCore.Infrastructure] [{ Id: 10403, Name: "Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized" }] Entity Framework Core "5.0.13" initialized '"SahaBTContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-02-03 16:54:54.038 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("3"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Students] ([Age], [Name])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Students]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2022-02-03 16:54:54.052 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("1"ms) [Parameters=["@__studentId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[StudentId], [s].[LessonId]
+FROM [StudentLessons] AS [s]
+WHERE [s].[StudentId] = @__studentId_0"
+2022-02-03 16:54:54.056 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (Size = 20)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Lessons] ([LessonCode])
+VALUES (@p0);
+SELECT [Id]
+FROM [Lessons]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2022-02-03 16:54:54.058 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("1"ms) [Parameters=["@p1='?' (DbType = Int32), @p2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [StudentLessons] ([LessonId], [StudentId])
+VALUES (@p1, @p2);"
+2022-02-03 16:54:54.060 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "OkObjectResult", writing value of type '"SahaBT.Shared.Model.ResponseModel"'.
+2022-02-03 16:54:54.061 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.Post (SahaBT.API)" in 16463.9136ms
+2022-02-03 16:54:54.061 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.Post (SahaBT.API)"'
+2022-02-03 16:54:54.062 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 POST https://localhost:44314/SahaBT/Post application/json 24 - 200 - application/json;+charset=utf-8 16477.5683ms
+2022-02-03 16:58:41.821 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Application started. Press Ctrl+C to shut down.
+2022-02-03 16:58:41.935 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Hosting environment: "Development"
+2022-02-03 16:58:41.939 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Content root path: "C:\Users\HP\source\repos\SahaBT.API\SahaBT.API"
+2022-02-03 16:58:41.990 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/index.html - -
+2022-02-03 16:58:43.317 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/index.html - - - 200 - text/html;charset=utf-8 1333.6015ms
+2022-02-03 16:58:43.441 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - -
+2022-02-03 16:58:43.536 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - - - 200 11944 application/javascript;+charset=utf-8 85.4167ms
+2022-02-03 16:58:43.978 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - -
+2022-02-03 16:58:45.396 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1419.3844ms
+2022-02-03 16:58:58.274 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 POST https://localhost:44314/SahaBT/Post application/json 24
+2022-02-03 16:58:58.438 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.Post (SahaBT.API)"'
+2022-02-03 16:58:58.636 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Post\", controller = \"SahaBT\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Shared.Model.ResponseModel]] Post(SahaBT.Shared.Model.ViewModel.StudentLessonAddModel)" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 16:59:15.711 +03:00 [Information] [Microsoft.EntityFrameworkCore.Infrastructure] [{ Id: 10403, Name: "Microsoft.EntityFrameworkCore.Infrastructure.ContextInitialized" }] Entity Framework Core "5.0.13" initialized '"SahaBTContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-02-03 16:59:17.892 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("182"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Students] ([Age], [Name])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Students]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2022-02-03 16:59:19.478 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("124"ms) [Parameters=["@__studentId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[StudentId], [s].[LessonId]
+FROM [StudentLessons] AS [s]
+WHERE [s].[StudentId] = @__studentId_0"
+2022-02-03 16:59:19.757 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("13"ms) [Parameters=["@p0='?' (Size = 20)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Lessons] ([LessonCode])
+VALUES (@p0);
+SELECT [Id]
+FROM [Lessons]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2022-02-03 16:59:19.807 +03:00 [Information] [Microsoft.EntityFrameworkCore.Database.Command] [{ Id: 20101, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted" }] Executed DbCommand ("4"ms) [Parameters=["@p1='?' (DbType = Int32), @p2='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [StudentLessons] ([LessonId], [StudentId])
+VALUES (@p1, @p2);"
+2022-02-03 16:59:19.839 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "OkObjectResult", writing value of type '"SahaBT.Shared.Model.ResponseModel"'.
+2022-02-03 16:59:19.870 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.Post (SahaBT.API)" in 21219.0189ms
+2022-02-03 16:59:19.872 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.Post (SahaBT.API)"'
+2022-02-03 16:59:19.880 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 POST https://localhost:44314/SahaBT/Post application/json 24 - 200 - application/json;+charset=utf-8 21605.9391ms
+2022-02-03 17:07:28.111 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Application started. Press Ctrl+C to shut down.
+2022-02-03 17:07:28.182 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Hosting environment: "Development"
+2022-02-03 17:07:28.186 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Content root path: "C:\Users\HP\source\repos\SahaBT.API\SahaBT.API"
+2022-02-03 17:07:28.216 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/index.html - -
+2022-02-03 17:07:29.681 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/index.html - - - 200 - text/html;charset=utf-8 1473.9526ms
+2022-02-03 17:07:29.763 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - -
+2022-02-03 17:07:29.923 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - - - 200 11944 application/javascript;+charset=utf-8 152.0387ms
+2022-02-03 17:07:30.362 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - -
+2022-02-03 17:07:30.774 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 412.0807ms
+2022-02-03 17:07:38.595 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 POST https://localhost:44314/SahaBT/Post application/json 24
+2022-02-03 17:07:38.708 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.Post (SahaBT.API)"'
+2022-02-03 17:07:38.837 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Post\", controller = \"SahaBT\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Shared.Model.ResponseModel]] Post(SahaBT.Shared.Model.ViewModel.StudentLessonAddModel)" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 17:07:40.436 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+2022-02-03 17:07:40.510 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.Post (SahaBT.API)" in 1656.8992ms
+2022-02-03 17:07:40.510 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.Post (SahaBT.API)"'
+2022-02-03 17:07:40.517 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 POST https://localhost:44314/SahaBT/Post application/json 24 - 400 - application/problem+json;+charset=utf-8 1922.6995ms
+2022-02-03 17:07:56.904 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 POST https://localhost:44314/SahaBT/Post application/json 2
+2022-02-03 17:07:56.912 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.Post (SahaBT.API)"'
+2022-02-03 17:07:56.913 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Post\", controller = \"SahaBT\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Shared.Model.ResponseModel]] Post(SahaBT.Shared.Model.ViewModel.StudentLessonAddModel)" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 17:07:56.921 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+2022-02-03 17:07:56.923 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.Post (SahaBT.API)" in 9.9946ms
+2022-02-03 17:07:56.923 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.Post (SahaBT.API)"'
+2022-02-03 17:07:56.925 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 POST https://localhost:44314/SahaBT/Post application/json 2 - 400 - application/problem+json;+charset=utf-8 20.8647ms
+2022-02-03 17:12:45.466 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Application started. Press Ctrl+C to shut down.
+2022-02-03 17:12:45.542 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Hosting environment: "Development"
+2022-02-03 17:12:45.545 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Content root path: "C:\Users\HP\source\repos\SahaBT.API\SahaBT.API"
+2022-02-03 17:12:45.576 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/index.html - -
+2022-02-03 17:12:46.637 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/index.html - - - 200 - text/html;charset=utf-8 1075.7272ms
+2022-02-03 17:12:46.691 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - -
+2022-02-03 17:12:46.705 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - - - 200 11944 application/javascript;+charset=utf-8 9.5584ms
+2022-02-03 17:12:47.692 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - -
+2022-02-03 17:12:48.109 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 416.9721ms
+2022-02-03 17:13:00.768 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 POST https://localhost:44314/SahaBT/Update application/json 26
+2022-02-03 17:13:00.953 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.Update (SahaBT.API)"'
+2022-02-03 17:13:01.109 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Update\", controller = \"SahaBT\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Shared.Model.ResponseModel]] Update(SahaBT.Shared.Model.ViewModel.StudentLessonUpdateModel)" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 17:13:02.306 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+2022-02-03 17:13:02.366 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.Update (SahaBT.API)" in 1229.5875ms
+2022-02-03 17:13:02.367 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.Update (SahaBT.API)"'
+2022-02-03 17:13:02.382 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 POST https://localhost:44314/SahaBT/Update application/json 26 - 400 - application/problem+json;+charset=utf-8 1614.2396ms
+2022-02-03 17:24:09.975 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Application started. Press Ctrl+C to shut down.
+2022-02-03 17:24:10.052 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Hosting environment: "Development"
+2022-02-03 17:24:10.054 +03:00 [Information] [Microsoft.Hosting.Lifetime] [] Content root path: "C:\Users\HP\source\repos\SahaBT.API\SahaBT.API"
+2022-02-03 17:24:10.082 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/index.html - -
+2022-02-03 17:24:11.056 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - -
+2022-02-03 17:24:11.061 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/index.html - - - 200 - text/html;charset=utf-8 988.6701ms
+2022-02-03 17:24:11.160 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/_framework/aspnetcore-browser-refresh.js - - - 200 11944 application/javascript;+charset=utf-8 88.0131ms
+2022-02-03 17:24:11.531 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - -
+2022-02-03 17:24:11.940 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 GET https://localhost:44314/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 409.6251ms
+2022-02-03 17:24:20.557 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 POST https://localhost:44314/SahaBT/Get application/json 22
+2022-02-03 17:24:20.676 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.Get (SahaBT.API)"'
+2022-02-03 17:24:20.785 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Get\", controller = \"SahaBT\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Entities.Shared.ResultModel.StudentsResponseModel] Get(SahaBT.Shared.Pagination.PagingParameters)" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 17:24:21.493 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+2022-02-03 17:24:21.536 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.Get (SahaBT.API)" in 738.6374ms
+2022-02-03 17:24:21.536 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.Get (SahaBT.API)"'
+2022-02-03 17:24:21.543 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 POST https://localhost:44314/SahaBT/Get application/json 22 - 400 - application/problem+json;+charset=utf-8 986.1143ms
+2022-02-03 17:24:26.133 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 1, Name: "RequestStarting" }] Request starting HTTP/2 POST https://localhost:44314/SahaBT/Get application/json 16
+2022-02-03 17:24:26.139 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Name: "ExecutingEndpoint" }] Executing endpoint '"SahaBT.API.Controllers.SahaBTController.Get (SahaBT.API)"'
+2022-02-03 17:24:26.140 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 3, Name: "ControllerActionExecuting" }] Route matched with "{action = \"Get\", controller = \"SahaBT\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[SahaBT.Entities.Shared.ResultModel.StudentsResponseModel] Get(SahaBT.Shared.Pagination.PagingParameters)" on controller "SahaBT.API.Controllers.SahaBTController" ("SahaBT.API").
+2022-02-03 17:24:26.280 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] [{ Id: 1, Name: "ObjectResultExecuting" }] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+2022-02-03 17:24:26.282 +03:00 [Information] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] [{ Id: 2, Name: "ActionExecuted" }] Executed action "SahaBT.API.Controllers.SahaBTController.Get (SahaBT.API)" in 141.8921ms
+2022-02-03 17:24:26.282 +03:00 [Information] [Microsoft.AspNetCore.Routing.EndpointMiddleware] [{ Id: 1, Name: "ExecutedEndpoint" }] Executed endpoint '"SahaBT.API.Controllers.SahaBTController.Get (SahaBT.API)"'
+2022-02-03 17:24:26.285 +03:00 [Information] [Microsoft.AspNetCore.Hosting.Diagnostics] [{ Id: 2, Name: "RequestFinished" }] Request finished HTTP/2 POST https://localhost:44314/SahaBT/Get application/json 16 - 400 - application/problem+json;+charset=utf-8 151.8995ms

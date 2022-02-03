@@ -1,0 +1,782 @@
+﻿++Solution 'SahaBT.API' ‎(4 of 4 projects)
+i:{00000000-0000-0000-0000-000000000000}:SahaBT.API.sln
+++SahaBT.API
+i:{00000000-0000-0000-0000-000000000000}:SahaBT.API
+++Connected Services 
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:>494
+++Dependencies
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:>493
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:>374
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:>376
+i:{4b613acd-cc9e-4fd6-b886-7b0b27cb332f}:>375
+++Properties
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\properties\
+++Controllers
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\controllers\
+++appsettings.json
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\appsettings.json
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\appsettings.json
+++Program.cs
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\program.cs
+++Startup.cs
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\startup.cs
+++WeatherForecast.cs
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\weatherforecast.cs
+++No service dependencies discovered
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:>495
+++Analyzers
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:analyzers
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:analyzers
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:analyzers
+i:{4b613acd-cc9e-4fd6-b886-7b0b27cb332f}:analyzers
+++Frameworks
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:frameworks
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:frameworks
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:frameworks
+i:{4b613acd-cc9e-4fd6-b886-7b0b27cb332f}:frameworks
+++Packages
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:packages
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:packages
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:packages
+++Projects
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:projects
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:projects
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:projects
+++launchSettings.json
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\properties\launchsettings.json
+++WeatherForecastController.cs
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\controllers\weatherforecastcontroller.cs
+++appsettings.Development.json
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\appsettings.development.json
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\appsettings.development.json
+++Microsoft.AspNetCore.Analyzers
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{4b613acd-cc9e-4fd6-b886-7b0b27cb332f}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{4b613acd-cc9e-4fd6-b886-7b0b27cb332f}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\.nuget\packages\microsoft.entityframeworkcore.analyzers\5.0.13\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:c:\users\hp\.nuget\packages\microsoft.entityframeworkcore.analyzers\5.0.13\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:c:\users\hp\.nuget\packages\microsoft.entityframeworkcore.analyzers\5.0.13\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.AspNetCore.App
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\microsoft.aspnetcore.app
+++Microsoft.NETCore.App
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\microsoft.netcore.app
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:c:\users\hp\source\repos\sahabt.api\sahabt.service\microsoft.netcore.app
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:c:\users\hp\source\repos\sahabt.api\sahabt.core\microsoft.netcore.app
+i:{4b613acd-cc9e-4fd6-b886-7b0b27cb332f}:c:\users\hp\source\repos\sahabt.api\sahabt.entities\microsoft.netcore.app
+++Microsoft.EntityFrameworkCore.Design (5.0.13)
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:>506
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:>534
+++Swashbuckle.AspNetCore (5.6.3)
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:>507
+++SahaBT.Entities
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.entities\sahabt.entities.csproj
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:c:\users\hp\source\repos\sahabt.api\sahabt.entities\sahabt.entities.csproj
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:c:\users\hp\source\repos\sahabt.api\sahabt.entities\sahabt.entities.csproj
+i:{00000000-0000-0000-0000-000000000000}:SahaBT.Entities
+++SahaBT.Service
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.service\sahabt.service.csproj
+i:{00000000-0000-0000-0000-000000000000}:SahaBT.Service
+++Class1.cs
+++AutoMapper (11.0.0)
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:>517
+++SahaBT.Core
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:c:\users\hp\source\repos\sahabt.api\sahabt.core\sahabt.core.csproj
+i:{00000000-0000-0000-0000-000000000000}:SahaBT.Core
+++EntityFramework
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:c:\users\hp\source\repos\sahabt.api\sahabt.core\entityframework\
+++DatabaseContext
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:c:\users\hp\source\repos\sahabt.api\sahabt.core\entityframework\databasecontext\
+++Mappings
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:c:\users\hp\source\repos\sahabt.api\sahabt.core\entityframework\mappings\
+++Repositories
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:c:\users\hp\source\repos\sahabt.api\sahabt.core\repositories\
+++UnitOfWork
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:c:\users\hp\source\repos\sahabt.api\sahabt.core\unitofwork\
+++SahaBTContext.cs
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:c:\users\hp\source\repos\sahabt.api\sahabt.core\entityframework\databasecontext\sahabtcontext.cs
+++LessonMap.cs
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:c:\users\hp\source\repos\sahabt.api\sahabt.core\entityframework\mappings\lessonmap.cs
+++StudentLessonMap.cs
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:c:\users\hp\source\repos\sahabt.api\sahabt.core\entityframework\mappings\studentlessonmap.cs
+++StudentMap.cs
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:c:\users\hp\source\repos\sahabt.api\sahabt.core\entityframework\mappings\studentmap.cs
+++Abstract
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:c:\users\hp\source\repos\sahabt.api\sahabt.core\unitofwork\abstract\
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:c:\users\hp\source\repos\sahabt.api\sahabt.service\abstract\
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:c:\users\hp\source\repos\sahabt.api\sahabt.core\repositories\abstract\
+i:{4b613acd-cc9e-4fd6-b886-7b0b27cb332f}:c:\users\hp\source\repos\sahabt.api\sahabt.entities\abstract\
+++Concrete
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:c:\users\hp\source\repos\sahabt.api\sahabt.core\unitofwork\concrete\
+i:{4b613acd-cc9e-4fd6-b886-7b0b27cb332f}:c:\users\hp\source\repos\sahabt.api\sahabt.entities\concrete\
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:c:\users\hp\source\repos\sahabt.api\sahabt.service\concrete\
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:c:\users\hp\source\repos\sahabt.api\sahabt.core\repositories\concrete\
+++Microsoft.AspNetCore.Identity.EntityFrameworkCore (5.0.13)
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:>535
+++Microsoft.EntityFrameworkCore (5.0.13)
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:>531
+++Microsoft.EntityFrameworkCore.SqlServer (5.0.13)
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:>533
+++Microsoft.EntityFrameworkCore.Tools (5.0.13)
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:>536
+++IUnitOfWork.cs
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:c:\users\hp\source\repos\sahabt.api\sahabt.core\unitofwork\abstract\iunitofwork.cs
+++UnitOfWork.cs
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:c:\users\hp\source\repos\sahabt.api\sahabt.core\unitofwork\concrete\unitofwork.cs
+++Base
+i:{4b613acd-cc9e-4fd6-b886-7b0b27cb332f}:c:\users\hp\source\repos\sahabt.api\sahabt.entities\base\
+++BaseEntity.cs
+i:{4b613acd-cc9e-4fd6-b886-7b0b27cb332f}:c:\users\hp\source\repos\sahabt.api\sahabt.entities\base\baseentity.cs
+++Lesson.cs
+i:{4b613acd-cc9e-4fd6-b886-7b0b27cb332f}:c:\users\hp\source\repos\sahabt.api\sahabt.entities\concrete\lesson.cs
+++Student.cs
+i:{4b613acd-cc9e-4fd6-b886-7b0b27cb332f}:c:\users\hp\source\repos\sahabt.api\sahabt.entities\concrete\student.cs
+++StudentLesson.cs
+i:{4b613acd-cc9e-4fd6-b886-7b0b27cb332f}:c:\users\hp\source\repos\sahabt.api\sahabt.entities\concrete\studentlesson.cs
+++ViewModel
+i:{4b613acd-cc9e-4fd6-b886-7b0b27cb332f}:c:\users\hp\source\repos\sahabt.api\sahabt.entities\model\viewmodel\
+++Migrations
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:c:\users\hp\source\repos\sahabt.api\sahabt.core\entityframework\migrations\
+++20220201081540_InitialCreate.cs
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:c:\users\hp\source\repos\sahabt.api\sahabt.core\entityframework\migrations\20220201081540_initialcreate.cs
+++SahaBTContextModelSnapshot.cs
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:c:\users\hp\source\repos\sahabt.api\sahabt.core\entityframework\migrations\sahabtcontextmodelsnapshot.cs
+++20220201081540_InitialCreate.Designer.cs
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:c:\users\hp\source\repos\sahabt.api\sahabt.core\entityframework\migrations\20220201081540_initialcreate.designer.cs
+++SahaBTController.cs
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\controllers\sahabtcontroller.cs
+++Model
+i:{4b613acd-cc9e-4fd6-b886-7b0b27cb332f}:c:\users\hp\source\repos\sahabt.api\sahabt.entities\model\
+++NewFolder
+++ResultModel
+i:{4b613acd-cc9e-4fd6-b886-7b0b27cb332f}:c:\users\hp\source\repos\sahabt.api\sahabt.entities\model\resultmodel\
+++ResponseModel.cs
+i:{4b613acd-cc9e-4fd6-b886-7b0b27cb332f}:c:\users\hp\source\repos\sahabt.api\sahabt.entities\model\resultmodel\baseresponsemodel\responsemodel.cs
+++Profile
+++MappingProfile.cs
+++AutoMapper
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:c:\users\hp\source\repos\sahabt.api\sahabt.service\automapper\
+++Profiles
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:c:\users\hp\source\repos\sahabt.api\sahabt.service\automapper\profiles\
+++StudentProfile.cs
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:c:\users\hp\source\repos\sahabt.api\sahabt.service\automapper\profiles\studentprofile.cs
+++LessonProfile.cs
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:c:\users\hp\source\repos\sahabt.api\sahabt.service\automapper\profiles\lessonprofile.cs
+++StudentLessonProfile.cs
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:c:\users\hp\source\repos\sahabt.api\sahabt.service\automapper\profiles\studentlessonprofile.cs
+++AutoMapper.Extensions.Microsoft.DependencyInjection (11.0.0)
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:>593
+++IStudentService.cs
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:c:\users\hp\source\repos\sahabt.api\sahabt.service\abstract\istudentservice.cs
+++StudentService.cs
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:c:\users\hp\source\repos\sahabt.api\sahabt.service\concrete\studentservice.cs
+++ILessonService.cs
+++LessonService.cs
+++Extensions
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:c:\users\hp\source\repos\sahabt.api\sahabt.service\extensions\
+++ServiceCollectionExtensions.cs
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:c:\users\hp\source\repos\sahabt.api\sahabt.service\extensions\servicecollectionextensions.cs
+++IEntityRepository.cs
+++EfEntityRepositoryBase.cs
+++IEntity.cs
+i:{4b613acd-cc9e-4fd6-b886-7b0b27cb332f}:c:\users\hp\source\repos\sahabt.api\sahabt.entities\abstract\ientity.cs
+++StudentLessonAddModel.cs
+i:{4b613acd-cc9e-4fd6-b886-7b0b27cb332f}:c:\users\hp\source\repos\sahabt.api\sahabt.entities\model\viewmodel\studentlessonaddmodel.cs
+++StudentLessonModel.cs
+++BaseResponseModel
+i:{4b613acd-cc9e-4fd6-b886-7b0b27cb332f}:c:\users\hp\source\repos\sahabt.api\sahabt.entities\model\resultmodel\baseresponsemodel\
+++StudentsModel.cs
+i:{4b613acd-cc9e-4fd6-b886-7b0b27cb332f}:c:\users\hp\source\repos\sahabt.api\sahabt.entities\model\viewmodel\studentsmodel.cs
+++ResponseModel
+i:{4b613acd-cc9e-4fd6-b886-7b0b27cb332f}:c:\users\hp\source\repos\sahabt.api\sahabt.entities\model\resultmodel\responsemodel\
+++IStudentLessonsRepository.cs
+++StudentsResponseModel.cs
+i:{4b613acd-cc9e-4fd6-b886-7b0b27cb332f}:c:\users\hp\source\repos\sahabt.api\sahabt.entities\model\resultmodel\responsemodel\studentsresponsemodel.cs
+++StudentsByLessonCodeResponseModel.cs
+i:{4b613acd-cc9e-4fd6-b886-7b0b27cb332f}:c:\users\hp\source\repos\sahabt.api\sahabt.entities\model\resultmodel\responsemodel\studentsbylessoncoderesponsemodel.cs
+++TotalStudentCountResponseModel.cs
+i:{4b613acd-cc9e-4fd6-b886-7b0b27cb332f}:c:\users\hp\source\repos\sahabt.api\sahabt.entities\model\resultmodel\responsemodel\totalstudentcountresponsemodel.cs
+++StudentLessonsRepository.cs
+++Generic
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:c:\users\hp\source\repos\sahabt.api\sahabt.core\repositories\generic\
+++IGenericRepository.cs
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:c:\users\hp\source\repos\sahabt.api\sahabt.core\repositories\generic\igenericrepository.cs
+++IStudentRepository.cs
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:c:\users\hp\source\repos\sahabt.api\sahabt.core\repositories\abstract\istudentrepository.cs
+++StudentRepository.cs
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:c:\users\hp\source\repos\sahabt.api\sahabt.core\repositories\concrete\studentrepository.cs
+++ILessonRespository.cs
+++LessonRepository.cs
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:c:\users\hp\source\repos\sahabt.api\sahabt.core\repositories\concrete\lessonrepository.cs
+++IStudentLessonRepository.cs
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:c:\users\hp\source\repos\sahabt.api\sahabt.core\repositories\abstract\istudentlessonrepository.cs
+++StudentLessonRepository.cs
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:c:\users\hp\source\repos\sahabt.api\sahabt.core\repositories\concrete\studentlessonrepository.cs
+++ILessonRepository.cs
+i:{6e06e8a6-bd42-41eb-ba4b-21cad453661a}:c:\users\hp\source\repos\sahabt.api\sahabt.core\repositories\abstract\ilessonrepository.cs
+++Utilities
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:c:\users\hp\source\repos\sahabt.api\sahabt.service\utilities\
+++Logger
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:c:\users\hp\source\repos\sahabt.api\sahabt.service\utilities\logger\
+++ErrorResultModel.cs
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:c:\users\hp\source\repos\sahabt.api\sahabt.service\utilities\logger\errorresultmodel.cs
+++ExceptionMiddleware.cs
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:c:\users\hp\source\repos\sahabt.api\sahabt.service\utilities\logger\exceptionmiddleware.cs
+++Serilog.AspNetCore (4.1.0)
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:>690
+++Serilog.Filters.Expressions (2.1.0)
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:>691
+++Serilog.Settings.Configuration (3.3.0)
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:>692
+++Serilog.Sinks.File (5.0.0)
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:>693
+++Serilog.Sinks.RollingFile (3.3.0)
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:>694
+++ExceptionMiddlewareExtensions.cs
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:c:\users\hp\source\repos\sahabt.api\sahabt.service\utilities\logger\exceptionmiddlewareextensions.cs
+++logs
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\logs\
+++myapp20220201.txt
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\logs\myapp20220201.txt
+++log-20220201.txt
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\logs\log-20220201.txt
+++log-20220202.txt
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\logs\log-20220202.txt
+++StudentLessonUpdateModel.cs
+i:{4b613acd-cc9e-4fd6-b886-7b0b27cb332f}:c:\users\hp\source\repos\sahabt.api\sahabt.entities\model\viewmodel\studentlessonupdatemodel.cs
+++StudentsByLessonCodeModel.cs
+i:{4b613acd-cc9e-4fd6-b886-7b0b27cb332f}:c:\users\hp\source\repos\sahabt.api\sahabt.entities\model\viewmodel\studentsbylessoncodemodel.cs
+++TotalStudentCountModel.cs
+i:{4b613acd-cc9e-4fd6-b886-7b0b27cb332f}:c:\users\hp\source\repos\sahabt.api\sahabt.entities\model\viewmodel\totalstudentcountmodel.cs
+++bin
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\
+++Debug
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\obj\debug\
+++net5.0
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\obj\debug\net5.0\
+++ref
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\ref\
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\obj\debug\net5.0\ref\
+++runtimes
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\runtimes\
+++AutoMapper.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\automapper.dll
+++AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\automapper.extensions.microsoft.dependencyinjection.dll
+++Humanizer.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\humanizer.dll
+++Microsoft.AspNetCore.Cryptography.Internal.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\microsoft.aspnetcore.cryptography.internal.dll
+++Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\microsoft.aspnetcore.cryptography.keyderivation.dll
+++Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\microsoft.aspnetcore.identity.entityframeworkcore.dll
+++Microsoft.Data.SqlClient.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\microsoft.data.sqlclient.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\runtimes\unix\lib\netcoreapp3.1\microsoft.data.sqlclient.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\runtimes\win\lib\netcoreapp3.1\microsoft.data.sqlclient.dll
+++Microsoft.EntityFrameworkCore.Abstractions.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\microsoft.entityframeworkcore.abstractions.dll
+++Microsoft.EntityFrameworkCore.Design.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\microsoft.entityframeworkcore.design.dll
+++Microsoft.EntityFrameworkCore.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\microsoft.entityframeworkcore.dll
+++Microsoft.EntityFrameworkCore.Relational.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\microsoft.entityframeworkcore.relational.dll
+++Microsoft.EntityFrameworkCore.SqlServer.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\microsoft.entityframeworkcore.sqlserver.dll
+++Microsoft.Extensions.DependencyInjection.Abstractions.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\microsoft.extensions.dependencyinjection.abstractions.dll
+++Microsoft.Extensions.DependencyInjection.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\microsoft.extensions.dependencyinjection.dll
+++Microsoft.Extensions.DependencyModel.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\microsoft.extensions.dependencymodel.dll
+++Microsoft.Extensions.Identity.Core.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\microsoft.extensions.identity.core.dll
+++Microsoft.Extensions.Identity.Stores.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\microsoft.extensions.identity.stores.dll
+++Microsoft.Extensions.Options.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\microsoft.extensions.options.dll
+++Microsoft.Extensions.Primitives.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\microsoft.extensions.primitives.dll
+++Microsoft.Identity.Client.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\microsoft.identity.client.dll
+++Microsoft.IdentityModel.JsonWebTokens.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\microsoft.identitymodel.jsonwebtokens.dll
+++Microsoft.IdentityModel.Logging.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\microsoft.identitymodel.logging.dll
+++Microsoft.IdentityModel.Protocols.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\microsoft.identitymodel.protocols.dll
+++Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\microsoft.identitymodel.protocols.openidconnect.dll
+++Microsoft.IdentityModel.Tokens.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\microsoft.identitymodel.tokens.dll
+++Microsoft.OpenApi.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\microsoft.openapi.dll
+++Newtonsoft.Json.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\newtonsoft.json.dll
+++SahaBT.API.deps.json
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\sahabt.api.deps.json
+++SahaBT.API.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\sahabt.api.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\ref\sahabt.api.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\obj\debug\net5.0\sahabt.api.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\obj\debug\net5.0\ref\sahabt.api.dll
+++SahaBT.API.exe
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\sahabt.api.exe
+++SahaBT.API.pdb
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\sahabt.api.pdb
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\obj\debug\net5.0\sahabt.api.pdb
+++SahaBT.API.runtimeconfig.dev.json
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\sahabt.api.runtimeconfig.dev.json
+++SahaBT.API.runtimeconfig.json
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\sahabt.api.runtimeconfig.json
+++SahaBT.Core.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\sahabt.core.dll
+++SahaBT.Core.pdb
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\sahabt.core.pdb
+++SahaBT.Entities.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\sahabt.entities.dll
+++SahaBT.Entities.pdb
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\sahabt.entities.pdb
+++SahaBT.Service.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\sahabt.service.dll
+++SahaBT.Service.pdb
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\sahabt.service.pdb
+++Serilog.AspNetCore.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\serilog.aspnetcore.dll
+++Serilog.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\serilog.dll
+++Serilog.Extensions.Hosting.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\serilog.extensions.hosting.dll
+++Serilog.Extensions.Logging.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\serilog.extensions.logging.dll
+++Serilog.Filters.Expressions.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\serilog.filters.expressions.dll
+++Serilog.Formatting.Compact.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\serilog.formatting.compact.dll
+++Serilog.Settings.Configuration.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\serilog.settings.configuration.dll
+++Serilog.Sinks.Console.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\serilog.sinks.console.dll
+++Serilog.Sinks.Debug.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\serilog.sinks.debug.dll
+++Serilog.Sinks.File.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\serilog.sinks.file.dll
+++Serilog.Sinks.RollingFile.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\serilog.sinks.rollingfile.dll
+++Superpower.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\superpower.dll
+++Swashbuckle.AspNetCore.Swagger.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\swashbuckle.aspnetcore.swagger.dll
+++Swashbuckle.AspNetCore.SwaggerGen.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\swashbuckle.aspnetcore.swaggergen.dll
+++Swashbuckle.AspNetCore.SwaggerUI.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\swashbuckle.aspnetcore.swaggerui.dll
+++System.Configuration.ConfigurationManager.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\system.configuration.configurationmanager.dll
+++System.Diagnostics.DiagnosticSource.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\system.diagnostics.diagnosticsource.dll
+++System.IdentityModel.Tokens.Jwt.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\system.identitymodel.tokens.jwt.dll
+++System.Runtime.Caching.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\system.runtime.caching.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\runtimes\win\lib\netstandard2.0\system.runtime.caching.dll
+++System.Runtime.CompilerServices.Unsafe.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\system.runtime.compilerservices.unsafe.dll
+++System.Security.Cryptography.ProtectedData.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\system.security.cryptography.protecteddata.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\runtimes\win\lib\netstandard2.0\system.security.cryptography.protecteddata.dll
+++unix
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\runtimes\unix\
+++win
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\runtimes\win\
+++win-arm
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\runtimes\win-arm\
+++win-arm64
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\runtimes\win-arm64\
+++win-x64
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\runtimes\win-x64\
+++win-x86
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\runtimes\win-x86\
+++lib
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\runtimes\unix\lib\
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\runtimes\win\lib\
+++native
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\runtimes\win-arm\native\
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\runtimes\win-arm64\native\
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\runtimes\win-x64\native\
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\runtimes\win-x86\native\
+++netcoreapp3.1
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\runtimes\unix\lib\netcoreapp3.1\
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\runtimes\win\lib\netcoreapp3.1\
+++netstandard2.0
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\runtimes\win\lib\netstandard2.0\
+++Microsoft.Data.SqlClient.SNI.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\runtimes\win-arm\native\microsoft.data.sqlclient.sni.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\runtimes\win-arm64\native\microsoft.data.sqlclient.sni.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\runtimes\win-x64\native\microsoft.data.sqlclient.sni.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\runtimes\win-x86\native\microsoft.data.sqlclient.sni.dll
+++Microsoft.Data.SqlClient.SNI.pdb
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\runtimes\win-arm\native\microsoft.data.sqlclient.sni.pdb
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\runtimes\win-arm64\native\microsoft.data.sqlclient.sni.pdb
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\runtimes\win-x64\native\microsoft.data.sqlclient.sni.pdb
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\runtimes\win-x86\native\microsoft.data.sqlclient.sni.pdb
+++obj
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\obj\
+++project.assets.json
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\obj\project.assets.json
+++project.nuget.cache
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\obj\project.nuget.cache
+++SahaBT.API.csproj.nuget.dgspec.json
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\obj\sahabt.api.csproj.nuget.dgspec.json
+++SahaBT.API.csproj.nuget.g.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\obj\sahabt.api.csproj.nuget.g.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\obj\sahabt.api.csproj.nuget.g.props
+++SahaBT.API.csproj.nuget.g.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\obj\sahabt.api.csproj.nuget.g.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\obj\sahabt.api.csproj.nuget.g.targets
+++staticwebassets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\obj\debug\net5.0\staticwebassets\
+++.NETCoreApp,Version=v5.0.AssemblyAttributes.cs
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\obj\debug\net5.0\.netcoreapp,version=v5.0.assemblyattributes.cs
+++apphost.exe
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\obj\debug\net5.0\apphost.exe
+++SahaBT.API.AssemblyInfo.cs
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\obj\debug\net5.0\sahabt.api.assemblyinfo.cs
+++SahaBT.API.AssemblyInfoInputs.cache
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\obj\debug\net5.0\sahabt.api.assemblyinfoinputs.cache
+++SahaBT.API.assets.cache
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\obj\debug\net5.0\sahabt.api.assets.cache
+++SahaBT.API.csproj.AssemblyReference.cache
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\obj\debug\net5.0\sahabt.api.csproj.assemblyreference.cache
+++SahaBT.API.csproj.CopyComplete
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\obj\debug\net5.0\sahabt.api.csproj.copycomplete
+++SahaBT.API.csproj.CoreCompileInputs.cache
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\obj\debug\net5.0\sahabt.api.csproj.corecompileinputs.cache
+++SahaBT.API.csproj.FileListAbsolute.txt
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\obj\debug\net5.0\sahabt.api.csproj.filelistabsolute.txt
+++SahaBT.API.GeneratedMSBuildEditorConfig.editorconfig
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\obj\debug\net5.0\sahabt.api.generatedmsbuildeditorconfig.editorconfig
+++SahaBT.API.genruntimeconfig.cache
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\obj\debug\net5.0\sahabt.api.genruntimeconfig.cache
+++SahaBT.API.MvcApplicationPartsAssemblyInfo.cache
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\obj\debug\net5.0\sahabt.api.mvcapplicationpartsassemblyinfo.cache
+++SahaBT.API.MvcApplicationPartsAssemblyInfo.cs
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\obj\debug\net5.0\sahabt.api.mvcapplicationpartsassemblyinfo.cs
+++SahaBT.API.RazorTargetAssemblyInfo.cache
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\obj\debug\net5.0\sahabt.api.razortargetassemblyinfo.cache
+++SahaBT.API.StaticWebAssets.Manifest.cache
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\obj\debug\net5.0\staticwebassets\sahabt.api.staticwebassets.manifest.cache
+++Imports
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:>740
+++Sdk.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\sdk\sdk.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.illink.tasks\sdk\sdk.props
+++Sdk.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\sdk\sdk.targets
+++Sdk.props (C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk\Sdk)
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\sdk\sdk.props
+++Sdk.props (C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk.Razor\Sdk)
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\sdk\sdk.props
+++Sdk.props (C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk.Web.ProjectSystem\Sdk)
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web.projectsystem\sdk\sdk.props
+++Sdk.props (C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk.Publish\Sdk)
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.publish\sdk\sdk.props
+++Sdk.targets (C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk\Sdk)
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\sdk\sdk.targets
+++Sdk.targets (C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk.Razor\Sdk)
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\sdk\sdk.targets
+++Sdk.targets (C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk.Web.ProjectSystem\Sdk)
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web.projectsystem\sdk\sdk.targets
+++Sdk.targets (C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk.Publish\Sdk)
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.publish\sdk\sdk.targets
+++Microsoft.Common.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.props
+++Microsoft.NET.Sdk.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.props
+++Sdk.Razor.CurrentVersion.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\targets\sdk.razor.currentversion.props
+++Microsoft.NET.Sdk.Web.ProjectSystem.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web.projectsystem\targets\microsoft.net.sdk.web.projectsystem.props
+++Microsoft.NET.Sdk.Publish.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.publish\targets\microsoft.net.sdk.publish.props
+++Microsoft.NET.Sdk.BeforeCommon.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.beforecommon.targets
+++Microsoft.CSharp.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.csharp.targets
+++Microsoft.NET.Sdk.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.targets
+++Microsoft.NET.Compatibility.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.compatibility.targets
+++NuGet.Build.Tasks.Pack.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\nuget.build.tasks.pack\build\nuget.build.tasks.pack.targets
+++Sdk.Razor.CurrentVersion.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\targets\sdk.razor.currentversion.targets
+++Microsoft.NET.Sdk.Web.ProjectSystem.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web.projectsystem\targets\microsoft.net.sdk.web.projectsystem.targets
+++Microsoft.NET.Sdk.Publish.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.publish\targets\microsoft.net.sdk.publish.targets
+++Microsoft.NuGet.ImportBefore.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\current\imports\microsoft.common.props\importbefore\microsoft.nuget.importbefore.props
+++NuGet.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\common7\ide\commonextensions\microsoft\nuget\nuget.props
+++Microsoft.NET.Sdk.DefaultItems.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.defaultitems.props
+++Microsoft.NET.Sdk.ImportWorkloads.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.importworkloads.props
+++Microsoft.NET.SupportedTargetFrameworks.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.supportedtargetframeworks.props
+++Microsoft.NET.SupportedPlatforms.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.supportedplatforms.props
+++Microsoft.NET.WindowsSdkSupportedTargetPlatforms.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.windowssdksupportedtargetplatforms.props
+++Microsoft.NET.Sdk.CSharp.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.csharp.props
+++Microsoft.NET.ILLink.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.illink.props
+++Microsoft.NET.Compatibility.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.compatibility.props
+++Microsoft.NET.PackTool.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.packtool.props
+++Microsoft.NET.PackProjectTool.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.packprojecttool.props
+++Microsoft.NET.Sdk.WindowsDesktop.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.windowsdesktop\targets\microsoft.net.sdk.windowsdesktop.props
+++Microsoft.NET.Windows.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.windows.props
+++Sdk.Razor.StaticAssets.ProjectSystem.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\sdk\sdk.razor.staticassets.projectsystem.props
+++Microsoft.TypeScript.Default.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\typescript\microsoft.typescript.default.props
+++Microsoft.NET.Sdk.Web.DefaultItems.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web.projectsystem\targets\microsoft.net.sdk.web.defaultitems.props
+++Microsoft.NET.DefaultAssemblyInfo.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.defaultassemblyinfo.targets
+++Microsoft.NET.DefaultOutputPaths.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.defaultoutputpaths.targets
+++Microsoft.NET.Sdk.ImportPublishProfile.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.importpublishprofile.targets
+++Microsoft.NET.TargetFrameworkInference.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.targetframeworkinference.targets
+++Microsoft.NET.Sdk.Razor.BeforeCommon.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.beforecommon.targets
+++Microsoft.NET.Sdk.ImportWorkloads.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.importworkloads.targets
+++Microsoft.NET.RuntimeIdentifierInference.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.runtimeidentifierinference.targets
+++Microsoft.NET.EolTargetFrameworks.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.eoltargetframeworks.targets
+++Microsoft.NET.NuGetOfflineCache.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.nugetofflinecache.targets
+++Microsoft.Managed.Before.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.managed.before.targets
+++Microsoft.CSharp.CurrentVersion.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.csharp.currentversion.targets
+++Microsoft.Managed.After.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.managed.after.targets
+++Microsoft.NET.Sdk.Common.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.common.targets
+++Microsoft.PackageDependencyResolution.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.packagedependencyresolution.targets
+++Microsoft.NET.Sdk.DefaultItems.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.defaultitems.targets
+++Microsoft.NET.Sdk.FrameworkReferenceResolution.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.frameworkreferenceresolution.targets
+++Microsoft.NET.Sdk.Shared.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.shared.targets
+++Microsoft.NET.DisableStandardFrameworkResolution.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.disablestandardframeworkresolution.targets
+++Microsoft.NET.DesignerSupport.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.designersupport.targets
+++Microsoft.NET.GenerateAssemblyInfo.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.generateassemblyinfo.targets
+++Microsoft.NET.GenerateGlobalUsings.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.generateglobalusings.targets
+++Microsoft.NET.GenerateSupportedRuntime.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.generatesupportedruntime.targets
+++Microsoft.NET.ComposeStore.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.composestore.targets
+++Microsoft.NET.CrossGen.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.crossgen.targets
+++Microsoft.NET.ObsoleteReferences.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.obsoletereferences.targets
+++Microsoft.NET.Publish.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.publish.targets
+++Microsoft.NET.PackTool.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.packtool.targets
+++Microsoft.NET.PackProjectTool.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.packprojecttool.targets
+++Microsoft.NET.PreserveCompilationContext.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.preservecompilationcontext.targets
+++Microsoft.NET.ConflictResolution.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.conflictresolution.targets
+++Microsoft.NET.Sdk.CSharp.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.csharp.targets
+++Microsoft.NET.ILLink.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.illink.targets
+++Microsoft.NET.Sdk.Analyzers.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.analyzers.targets
+++Microsoft.NET.Compatibility.Common.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.compatibility.common.targets
+++Microsoft.NET.Sdk.Razor.Compilation.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.compilation.targets
+++Microsoft.NET.Sdk.Razor.Configuration.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.configuration.targets
+++Microsoft.NET.Sdk.Razor.CodeGeneration.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.codegeneration.targets
+++Microsoft.NET.Sdk.Razor.Component.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.component.targets
+++Microsoft.NET.Sdk.Razor.StaticWebAssets.5_0.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.staticwebassets.5_0.targets
+++Microsoft.NET.Sdk.Razor.ScopedCss.5_0.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.scopedcss.5_0.targets
+++Microsoft.NET.Sdk.Razor.GenerateAssemblyInfo.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.generateassemblyinfo.targets
+++Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.mvcapplicationpartsdiscovery.targets
+++Microsoft.NET.Sdk.Razor.DesignTime.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\razor\microsoft.net.sdk.razor.designtime.targets
+++Microsoft.TypeScript.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\typescript\microsoft.typescript.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files (x86)\microsoft sdks\typescript\4.3\build\microsoft.typescript.targets
+++Microsoft.TypeScript.DotNetCore.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\typescript\microsoft.typescript.dotnetcore.targets
+++Microsoft.Web.Designtime.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\managed.web\microsoft.web.designtime.targets
+++Default.pubxml
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.publish\targets\publishprofiles\default.pubxml
+++Microsoft.NET.Sdk.Publish.ComputeFiles.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.publish\targets\computetargets\microsoft.net.sdk.publish.computefiles.targets
+++Microsoft.NET.Sdk.Publish.FilterFiles.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.publish\targets\copytargets\microsoft.net.sdk.publish.filterfiles.targets
+++Microsoft.NET.Sdk.Publish.CopyFiles.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.publish\targets\copytargets\microsoft.net.sdk.publish.copyfiles.targets
+++Microsoft.NET.Sdk.Publish.TransformFiles.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.publish\targets\transformtargets\microsoft.net.sdk.publish.transformfiles.targets
+++Microsoft.NET.Sdk.Publish.FileSystem.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.publish\targets\publishtargets\microsoft.net.sdk.publish.filesystem.targets
+++Microsoft.NET.Sdk.DotNetCLITool.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.publish\targets\dotnetclitooltargets\microsoft.net.sdk.dotnetclitool.targets
+++Microsoft.Extensions.ApiDescription.Server.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\.nuget\packages\microsoft.extensions.apidescription.server\3.0.0\build\microsoft.extensions.apidescription.server.props
+++Swashbuckle.AspNetCore.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\.nuget\packages\swashbuckle.aspnetcore\5.6.3\build\swashbuckle.aspnetcore.props
+++Microsoft.EntityFrameworkCore.Design.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\.nuget\packages\microsoft.entityframeworkcore.design\5.0.13\build\netcoreapp3.0\microsoft.entityframeworkcore.design.props
+++Microsoft.NuGet.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\nuget\17.0\microsoft.nuget.props
+++Microsoft.NETCoreSdk.BundledVersions.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\microsoft.netcoresdk.bundledversions.props
+++Microsoft.NET.Sdk.WindowsDesktop.WindowsForms.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.windowsdesktop\targets\microsoft.net.sdk.windowsdesktop.windowsforms.props
+++Microsoft.NET.Sdk.WindowsDesktop.WPF.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.windowsdesktop\targets\microsoft.net.sdk.windowsdesktop.wpf.props
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.android)
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.android\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.ios)
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.ios\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.maccatalyst)
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.maccatalyst\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.macos)
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.macos\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.maui)
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.maui\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.tvos)
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.tvos\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.workload.emscripten)
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.workload.emscripten\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.workload.mono.toolchain)
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.workload.mono.toolchain\workloadmanifest.targets
+++Microsoft.CSharp.Core.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\roslyn\microsoft.csharp.core.targets
+++Microsoft.CSharp.DesignTime.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\managed\microsoft.csharp.designtime.targets
+++Microsoft.Common.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.common.targets
+++Microsoft.ServiceModel.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.servicemodel.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\windows\microsoft.net\framework\v4.0.30319\microsoft.servicemodel.targets
+++Microsoft.NET.Sdk.DefaultItems.Shared.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.defaultitems.shared.targets
+++Microsoft.NETCoreSdk.BundledCliTools.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\microsoft.netcoresdk.bundledclitools.props
+++Microsoft.NET.DefaultPackageConflictOverrides.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.defaultpackageconflictoverrides.targets
+++Microsoft.CodeAnalysis.NetAnalyzers.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\build\microsoft.codeanalysis.netanalyzers.props
+++Microsoft.CodeAnalysis.NetAnalyzers.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\build\microsoft.codeanalysis.netanalyzers.targets
+++04.03.05.00.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files (x86)\microsoft sdks\typescript\versions\04.03.05.00.props
+++Microsoft.NET.ILLink.Tasks.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.illink.tasks\build\microsoft.net.illink.tasks.props
+++System.Windows.Forms.Analyzers.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.windowsdesktop\targets\system.windows.forms.analyzers.props
+++Microsoft.Managed.Core.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\roslyn\microsoft.managed.core.targets
+++Microsoft.Managed.DesignTime.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\managed\microsoft.managed.designtime.targets
+++Microsoft.Common.CurrentVersion.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.common.currentversion.targets
+++Microsoft.Managed.Core.CurrentVersions.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\roslyn\microsoft.managed.core.currentversions.targets
+++SahaBT.API.csproj.user
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\sahabt.api.csproj.user
+++Microsoft.NET.props
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.net.props
+++Microsoft.CodeAnalysis.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\codeanalysis\microsoft.codeanalysis.targets
+++Microsoft.Xaml.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.xaml.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\windows\microsoft.net\framework\v4.0.30319\microsoft.xaml.targets
+++Microsoft.WorkflowBuildExtensions.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.workflowbuildextensions.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\windows\microsoft.net\framework\v4.0.30319\microsoft.workflowbuildextensions.targets
+++Microsoft.TeamTest.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\teamtest\microsoft.teamtest.targets
+++NuGet.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\common7\ide\commonextensions\microsoft\nuget\nuget.targets
+++Microsoft.Docker.ImportAfter.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.docker.importafter.targets
+++Microsoft.NET.Build.Extensions.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.net.build.extensions.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\microsoft.net.build.extensions\microsoft.net.build.extensions.targets
+++Microsoft.NuGet.ImportAfter.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.nuget.importafter.targets
+++Microsoft.VisualStudio.Azure.Fabric.ServiceProject.ImportAfter.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.visualstudio.azure.fabric.serviceproject.importafter.targets
+++Microsoft.Web.ImportAfter.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.web.importafter.targets
+++Microsoft.Extensions.ApiDescription.Server.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\.nuget\packages\microsoft.extensions.apidescription.server\3.0.0\build\microsoft.extensions.apidescription.server.targets
+++Microsoft.Docker.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\sdks\microsoft.docker.sdk\build\microsoft.docker.targets
+++Microsoft.VisualStudio.Azure.Fabric.ServiceProject.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\service fabric tools\microsoft.visualstudio.azure.fabric.serviceproject.targets
+++Microsoft.Web.IISSupport.targets
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\managed.web\microsoft.web.iissupport.targets
+++Microsoft.Extensions.Caching.Redis (2.2.0)
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:>889
+++Newtonsoft.Json (13.0.1)
+i:{6b59eb72-35c3-46f4-9547-d924ac2c8f0a}:>890
+++Microsoft.Extensions.Caching.Redis.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\microsoft.extensions.caching.redis.dll
+++StackExchange.Redis.StrongName.dll
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\bin\debug\net5.0\stackexchange.redis.strongname.dll
+++myapp20220202.txt
+i:{8b9580cb-0c59-4240-b13f-cec59586b222}:c:\users\hp\source\repos\sahabt.api\sahabt.api\logs\myapp20220202.txt

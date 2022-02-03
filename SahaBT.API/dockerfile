@@ -1,0 +1,4 @@
+FROM microsoft/dotnet:5.0-aspnetcore-runtime AS base
+WORKDIR /app
+COPY ./src/SahaBT.API/publish .
+ENTRYPOINT ["dotnet", "SahaBT.API.dll"]
